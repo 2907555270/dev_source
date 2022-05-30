@@ -4,29 +4,23 @@ You can use the [editor on GitHub](https://github.com/2907555270/dev_source/edit
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Resource navigation
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+You can click on any link to get the resource you want (project only redirects to the Github resource path)
 
-```markdown
-Syntax highlighted code block
+#### docs
+-  [index.md](https://2907555270.github.io/dev_source/docs/index.md) 
 
-# Header 1
-## Header 2
-### Header 3
+#### source
+- js
+  - [vue.js](https://2907555270.github.io/dev_source/source/js/vue.js)  
+  - [jquery-3.6.0.min.js](https://2907555270.github.io/dev_source/source/js/jquery-3.6.0.min.js)
+  - [echarts.min.js](https://2907555270.github.io/dev_source/source/js/jquery-3.6.0.min.js)
+  - [bootstrap.min.js](https://2907555270.github.io/dev_source/source/js/bootstrap.min.js.js)
 
-- Bulleted
-- List
+#### project
+- [Garbage Classify](https://github.com/2907555270/dev_source/tree/main/project/Garbage%20Classify)
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 ### Jekyll Themes
 
