@@ -19,8 +19,10 @@ You can click on any link to get the resource you want (project only redirects t
   - [bootstrap.min.js](https://2907555270.github.io/dev_source/source/js/bootstrap.min.js)
 
 #### project
-- [Garbage Classify](https://github.com/2907555270/dev_source/tree/main/project/Garbage%20Classify)
-
+- AI
+  - [Garbage Classify](https://github.com/2907555270/dev_source/tree/main/project/Garbage%20Classify)
+- WEB
+    
 
 ### Jekyll Themes
 
