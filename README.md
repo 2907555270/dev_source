@@ -17,6 +17,7 @@ You can click on any link to get the resource you want (project only redirects t
   - [jquery-3.6.0.min.js](https://2907555270.github.io/dev_source/source/js/jquery-3.6.0.min.js)
   - [echarts.min.js](https://2907555270.github.io/dev_source/source/js/jquery-3.6.0.min.js)
   - [bootstrap.min.js](https://2907555270.github.io/dev_source/source/js/bootstrap.min.js)
+  - [axios.min.js](https://2907555270.github.io/dev_source/source/js/axios.min.js)
 
 #### project
 - AI
