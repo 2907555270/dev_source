@@ -8,8 +8,10 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 You can click on any link to get the resource you want (project only redirects to the Github resource path)
 
-#### docs
--  [index.md](https://2907555270.github.io/dev_source/docs/index.md) 
+#### article
+I'll record a few things here:
+- [Study tutorials](https://github.com/2907555270/dev_source/tree/main/article/learning_notes) （this may be what you need）
+- [Life experience](https://github.com/2907555270/dev_source/tree/main/article/life_record) （Record my messy thoughts, which ONES I don't mind being seen.）
 
 #### source
 - js
@@ -33,4 +35,5 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with the above
+We can communicate via email：2907555270t@gmail.com
