@@ -1,6 +1,6 @@
 package dao;
 
-import com.txy.dao.UserMapper;
+import com.txy.mapper.UserMapper;
 import com.txy.domain.User;
 import org.junit.Before;
 import org.junit.Test;

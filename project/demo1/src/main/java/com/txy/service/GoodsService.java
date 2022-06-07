@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface GoodsService {
     List<Goods> findByCategory(int category);
+
+    String findByName(String name);
 }

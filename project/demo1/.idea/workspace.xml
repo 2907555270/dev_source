@@ -10,30 +10,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9dea2e3-d577-4839-b531-83d8f1319989" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mylog.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/config/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/GoodsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/GoodsDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/GoodsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/txy/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mongo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/UserDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/GoodsServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/factory/MongoDbFactoryBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dao/GoodsDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/MongoConnectionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/dao/GoodsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/dao/Impl/GoodsRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/domain/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/test/java/com/example/demo1_boot/dao/GoodsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../article/learning_notes/开发过程中的疑难文章.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../article/learning_notes/开发过程中的疑难文章.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/service/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/service/Impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/GoodsDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/GoodsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/GoodsDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Goods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/GoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/GoodsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/txy/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/txy/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mongo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/UserDaoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/service/GoodsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/GoodsServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/config/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/dao/UserMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/dao/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/domain/Goods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/GoodsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/Impl/GoodsServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/Impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mongo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.UserDaoTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.UserServiceTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/dao.UserDaoTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.UserServiceTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/UserDaoTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/GoodsServiceTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserServiceTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +106,11 @@
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34168157" />
-    <property name="settings.editor.selected.configurable" value="spring" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -94,8 +126,40 @@
       <recent name="$PROJECT_DIR$/src/main/java/webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GoodsServiceTest.test_findAll">
-    <configuration name="GoodsServiceTest.test_findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.11">
+    <configuration name="GoodsDaoTest.test_findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.GoodsDaoTest" />
+      <option name="METHOD_NAME" value="test_findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsDaoTest.test_findByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.GoodsDaoTest" />
+      <option name="METHOD_NAME" value="test_findByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoodsServiceTest.test_findByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo1" />
       <extension name="coverage">
         <pattern>
@@ -105,29 +169,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.GoodsServiceTest" />
-      <option name="METHOD_NAME" value="test_findAll" />
+      <option name="METHOD_NAME" value="test_findByName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserDaoTest.test_findByUsername" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.UserDaoTest" />
-      <option name="METHOD_NAME" value="test_findByUsername" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MongoConnectionTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo1" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +184,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="service.MongoConnectionTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -153,22 +202,6 @@
       <option name="PACKAGE_NAME" value="service" />
       <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
       <option name="METHOD_NAME" value="test_login" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.test_update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
-      <option name="METHOD_NAME" value="test_update" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -264,20 +297,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.UserDaoTest.test_findByUsername" />
-      <item itemvalue="JUnit.UserServiceTest" />
+      <item itemvalue="JUnit.MongoConnectionTest.test" />
+      <item itemvalue="JUnit.GoodsDaoTest.test_findAll" />
+      <item itemvalue="JUnit.GoodsServiceTest.test_findByName" />
+      <item itemvalue="JUnit.GoodsDaoTest.test_findByName" />
       <item itemvalue="JUnit.UserServiceTest.test_login" />
-      <item itemvalue="JUnit.UserServiceTest.test_update" />
       <item itemvalue="Tomcat Server.Tomcat 10.0.11" />
-      <item itemvalue="JUnit.GoodsServiceTest.test_findAll" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GoodsServiceTest.test_findAll" />
-        <item itemvalue="JUnit.UserDaoTest.test_findByUsername" />
+        <item itemvalue="JUnit.GoodsServiceTest.test_findByName" />
+        <item itemvalue="JUnit.GoodsDaoTest.test_findByName" />
+        <item itemvalue="JUnit.MongoConnectionTest.test" />
         <item itemvalue="JUnit.UserServiceTest.test_login" />
-        <item itemvalue="JUnit.UserServiceTest.test_update" />
-        <item itemvalue="JUnit.UserServiceTest" />
+        <item itemvalue="JUnit.GoodsDaoTest.test_findAll" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +327,8 @@
       <workItem from="1654528917429" duration="207000" />
       <workItem from="1654529147855" duration="4026000" />
       <workItem from="1654558707415" duration="8850000" />
-      <workItem from="1654568940164" duration="5898000" />
+      <workItem from="1654568940164" duration="25313000" />
+      <workItem from="1654599585235" duration="1739000" />
     </task>
     <servers />
   </component>

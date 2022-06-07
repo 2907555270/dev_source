@@ -1,2 +1,5 @@
+dao/GoodsDaoTest.class
 service/UserServiceTest.class
+service/GoodsServiceTest.class
 dao/UserDaoTest.class
+service/MongoConnectionTest.class

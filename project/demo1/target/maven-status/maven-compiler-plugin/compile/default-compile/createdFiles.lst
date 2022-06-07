@@ -1,6 +1,12 @@
 com/txy/service/UserService.class
+com/txy/service/GoodsService.class
+com/txy/domain/Goods.class
+com/txy/service/Impl/GoodsServiceImpl.class
+com/txy/dao/GoodsDao.class
+com/txy/dao/Impl/GoodsDaoImpl.class
+com/txy/controller/GoodsController.class
 com/txy/config/Result.class
-com/txy/dao/UserMapper.class
+com/txy/mapper/UserMapper.class
 com/txy/service/Impl/UserServiceImpl.class
 com/txy/controller/UserController.class
 com/txy/domain/User.class

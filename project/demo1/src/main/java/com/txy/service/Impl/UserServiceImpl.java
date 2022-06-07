@@ -1,6 +1,6 @@
 package com.txy.service.Impl;
 
-import com.txy.dao.UserMapper;
+import com.txy.mapper.UserMapper;
 import com.txy.domain.User;
 import com.txy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,6 +1,12 @@
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/domain/Goods.java
 /home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/service/Impl/UserServiceImpl.java
-/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/dao/UserMapper.java
 /home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/domain/User.java
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/dao/GoodsDao.java
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/service/GoodsService.java
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/dao/Impl/GoodsDaoImpl.java
 /home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/config/Result.java
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/mapper/UserMapper.java
 /home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/controller/UserController.java
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/controller/GoodsController.java
 /home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/service/UserService.java
+/home/flyme/Git_Project/dev_source/project/demo1/src/main/java/com/txy/service/Impl/GoodsServiceImpl.java

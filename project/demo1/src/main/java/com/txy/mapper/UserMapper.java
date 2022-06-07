@@ -1,4 +1,4 @@
-package com.txy.dao;
+package com.txy.mapper;
 
 import com.txy.domain.User;
 

@@ -18,8 +18,14 @@ public class GoodsServiceTest {
     GoodsService service;
 
     @Test
-    public void test_findAll(){
-        List<Goods> goods = service.findByCategory(2);
+    public void test_findByCategory(){
+        List<Goods> goods = service.findByCategory(1);
         System.out.println(goods.toString());
+    }
+
+    @Test
+    public void test_findByName(){
+        String a = service.findByName("a");
+        System.out.println(a);
     }
 }

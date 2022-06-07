@@ -3,13 +3,14 @@ package com.txy.domain;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.mongodb.core.mapping.Document;
+//import org.springframework.data.mongodb.core.mapping.Document;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "goods")
+//@Document(collection = "goods")
 public class Goods {
+    private String _id;
     private int gid;
     private String name;
     private double price;
