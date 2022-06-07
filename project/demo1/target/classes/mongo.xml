@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/data/mongo
+       http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--引入MongoDB连接文件-->
+    <context:property-placeholder location="classpath:jdbc.properties" ignore-unresolvable="true"/>
+
+    <!--开启注解-->
+    <context:annotation-config/>
+
+    <!--连接MongoDB配置-->
+    <mongo:mongo-client id="mongo" host="${mongo.host}" port="${mongo.port}"/>
+
+    <mongo:db-factory id="mongoDbFactory" dbname="${mongo.dbname}" mongo-client-ref="mongo"/>
+
+
+    <!--配置mongoTemplate-->
+    <!-- mongodb的主要操作对象，所有对mongodb的增删改查的操作都是通过它完成-->
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory"/>
+    </bean>
+
+</beans>

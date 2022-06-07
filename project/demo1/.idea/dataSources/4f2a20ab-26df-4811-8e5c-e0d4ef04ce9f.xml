@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="docker_mongodb">
+  <database-model serializer="dbm" dbms="MONGO" family-id="MONGO" format-version="4.23">
+    <root id="1">
+      <ServerVersion>5.0.5</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="admin"/>
+    <schema id="3" parent="1" name="config"/>
+    <schema id="4" parent="1" name="demo1"/>
+    <schema id="5" parent="1" name="local"/>
+    <schema id="6" parent="1" name="runoob"/>
+    <table id="7" parent="4" name="user"/>
+    <table id="8" parent="6" name="runoob"/>
+    <table id="9" parent="6" name="runoob.test"/>
+    <column id="10" parent="7" name="_id">
+      <Position>1</Position>
+      <DataType>ObjectId|12s</DataType>
+    </column>
+    <column id="11" parent="7" name="uid">
+      <Position>2</Position>
+      <DataType>String|12s</DataType>
+    </column>
+    <column id="12" parent="8" name="_id">
+      <Position>1</Position>
+      <DataType>ObjectId|12s</DataType>
+    </column>
+    <column id="13" parent="8" name="hello">
+      <Position>1</Position>
+      <DataType>Double|8s</DataType>
+    </column>
+    <column id="14" parent="9" name="_id">
+      <Position>1</Position>
+      <DataType>ObjectId|12s</DataType>
+    </column>
+    <column id="15" parent="9" name="a">
+      <Position>2</Position>
+      <DataType>Double|8s</DataType>
+    </column>
+  </database-model>
+</dataSource>

@@ -1,0 +1,240 @@
+[INFO ] 2022-06-07 08:30:18,830(1) --> [MLog-Init-Reporter] com.mchange.v2.log.MLog$1.run(MLog.java:191): MLog clients using log4j logging.  
+[DEBUG] 2022-06-07 08:30:18,836(7) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /  
+[DEBUG] 2022-06-07 08:30:18,836(7) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,836(7) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,837(8) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,837(8) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,837(8) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,838(9) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,838(9) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:18,839(10) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[INFO ] 2022-06-07 08:30:18,962(133) --> [main] com.mchange.v2.c3p0.C3P0Registry.banner(C3P0Registry.java:248): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]  
+[DEBUG] 2022-06-07 08:30:18,984(155) --> [main] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:254): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj0tmdvz9a47|1efe439d,name=1hge9ifapgj0tmdvz9a47|1efe439d registered.  
+[DEBUG] 2022-06-07 08:30:19,000(171) --> [main] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:246): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj0tmdvz9a47|1efe439d,name=1hge9ifapgj0tmdvz9a47|1efe439d unregistered, in order to be reregistered after update.  
+[DEBUG] 2022-06-07 08:30:19,000(171) --> [main] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:254): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj0tmdvz9a47|1efe439d,name=1hge9ifapgj0tmdvz9a47|1efe439d registered.  
+[INFO ] 2022-06-07 08:30:19,258(429) --> [main] com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:527): Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge9ifapgj0tmdvz9a47|1efe439d, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge9ifapgj0tmdvz9a47|1efe439d, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://172.20.0.2:3306/demo1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]  
+[DEBUG] 2022-06-07 08:30:19,264(435) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:19,265(436) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:19,265(436) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:19,266(437) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:30:19,267(438) --> [main] com.mchange.v2.resourcepool.BasicResourcePool.<init>(BasicResourcePool.java:360): com.mchange.v2.resourcepool.BasicResourcePool@51a06cbe config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]  
+[DEBUG] 2022-06-07 08:30:19,267(438) --> [main] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:401): Created new pool for auth, username (masked): 'ro******'.  
+[DEBUG] 2022-06-07 08:30:19,268(439) --> [main] com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:625): acquire test -- pool size: 0; target_pool_size: 3; desired target? 1  
+[DEBUG] 2022-06-07 08:30:19,268(439) --> [main] com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1479): awaitAvailable(): [unknown]  
+[DEBUG] 2022-06-07 08:30:19,425(596) --> [main] com.mchange.v2.c3p0.impl.NewPooledConnection.handleThrowable(NewPooledConnection.java:503): com.mchange.v2.c3p0.impl.NewPooledConnection@5522763b handling a throwable.  
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid = 6' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.update(Unknown Source)
+	at com.txy.service.Impl.UserServiceImpl.update(UserServiceImpl.java:22)
+	at service.UserServiceTest.test_update(UserServiceTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[DEBUG] 2022-06-07 08:30:19,429(600) --> [main] com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:97): Attempted to convert SQLException to SQLException. Leaving it alone. [SQLState: 42000; errorCode: 1064]  
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid = 6' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.update(Unknown Source)
+	at com.txy.service.Impl.UserServiceImpl.update(UserServiceImpl.java:22)
+	at service.UserServiceTest.test_update(UserServiceTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[DEBUG] 2022-06-07 08:30:19,431(602) --> [main] com.mchange.v2.c3p0.impl.DefaultConnectionTester.statusOnException(DefaultConnectionTester.java:339): Testing a Connection in response to an Exception:  
+java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where uid = 6' at line 3
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:371)
+	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at jdk.proxy2/jdk.proxy2.$Proxy28.update(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.update(SqlSessionTemplate.java:294)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:67)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at jdk.proxy2/jdk.proxy2.$Proxy30.update(Unknown Source)
+	at com.txy.service.Impl.UserServiceImpl.update(UserServiceImpl.java:22)
+	at service.UserServiceTest.test_update(UserServiceTest.java:43)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:83)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+[INFO ] 2022-06-07 08:33:01,743(0) --> [MLog-Init-Reporter] com.mchange.v2.log.MLog$1.run(MLog.java:191): MLog clients using log4j logging.  
+[DEBUG] 2022-06-07 08:33:01,748(5) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /  
+[DEBUG] 2022-06-07 08:33:01,748(5) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,748(5) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,749(6) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,749(6) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,749(6) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,750(7) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,750(7) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:01,750(7) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[INFO ] 2022-06-07 08:33:01,872(129) --> [main] com.mchange.v2.c3p0.C3P0Registry.banner(C3P0Registry.java:248): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]  
+[DEBUG] 2022-06-07 08:33:01,900(157) --> [main] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:254): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj4bbg3slamj|f107c50,name=1hge9ifapgj4bbg3slamj|f107c50 registered.  
+[DEBUG] 2022-06-07 08:33:01,912(169) --> [main] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:246): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj4bbg3slamj|f107c50,name=1hge9ifapgj4bbg3slamj|f107c50 unregistered, in order to be reregistered after update.  
+[DEBUG] 2022-06-07 08:33:01,912(169) --> [main] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:254): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj4bbg3slamj|f107c50,name=1hge9ifapgj4bbg3slamj|f107c50 registered.  
+[INFO ] 2022-06-07 08:33:02,207(464) --> [main] com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:527): Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge9ifapgj4bbg3slamj|f107c50, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge9ifapgj4bbg3slamj|f107c50, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://172.20.0.2:3306/demo1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]  
+[DEBUG] 2022-06-07 08:33:02,215(472) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:02,216(473) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:02,217(474) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:02,217(474) --> [main] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:02,218(475) --> [main] com.mchange.v2.resourcepool.BasicResourcePool.<init>(BasicResourcePool.java:360): com.mchange.v2.resourcepool.BasicResourcePool@5ea502e0 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]  
+[DEBUG] 2022-06-07 08:33:02,219(476) --> [main] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:401): Created new pool for auth, username (masked): 'ro******'.  
+[DEBUG] 2022-06-07 08:33:02,219(476) --> [main] com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:625): acquire test -- pool size: 0; target_pool_size: 3; desired target? 1  
+[DEBUG] 2022-06-07 08:33:02,219(476) --> [main] com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1479): awaitAvailable(): [unknown]  
+[INFO ] 2022-06-07 08:33:25,470(0) --> [MLog-Init-Reporter] com.mchange.v2.log.MLog$1.run(MLog.java:191): MLog clients using log4j logging.  
+[DEBUG] 2022-06-07 08:33:25,478(8) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /  
+[DEBUG] 2022-06-07 08:33:25,479(9) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,479(9) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,479(9) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,479(9) --> [MLog-Init-Reporter] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,480(10) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,480(10) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,481(11) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:25,481(11) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[INFO ] 2022-06-07 08:33:25,505(35) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.c3p0.C3P0Registry.banner(C3P0Registry.java:248): Initializing c3p0-0.9.5.5 [built 11-December-2019 22:18:33 -0800; debug? true; trace: 10]  
+[DEBUG] 2022-06-07 08:33:25,532(62) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:254): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj4tmhe8ymqx|72b5e4b8,name=1hge9ifapgj4tmhe8ymqx|72b5e4b8 registered.  
+[DEBUG] 2022-06-07 08:33:25,551(81) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:246): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj4tmhe8ymqx|72b5e4b8,name=1hge9ifapgj4tmhe8ymqx|72b5e4b8 unregistered, in order to be reregistered after update.  
+[DEBUG] 2022-06-07 08:33:25,552(82) --> [RMI TCP Connection(2)-127.0.0.1] com.mchange.v2.c3p0.management.DynamicPooledDataSourceManagerMBean.reinitialize(DynamicPooledDataSourceManagerMBean.java:254): MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hge9ifapgj4tmhe8ymqx|72b5e4b8,name=1hge9ifapgj4tmhe8ymqx|72b5e4b8 registered.  
+[INFO ] 2022-06-07 08:33:40,116(14646) --> [http-nio-8080-exec-2] com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getPoolManager(AbstractPoolBackedDataSource.java:527): Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hge9ifapgj4tmhe8ymqx|72b5e4b8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hge9ifapgj4tmhe8ymqx|72b5e4b8, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://172.20.0.2:3306/demo1, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {password=******, user=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]  
+[DEBUG] 2022-06-07 08:33:40,128(14658) --> [http-nio-8080-exec-2] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:40,129(14659) --> [http-nio-8080-exec-2] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:40,130(14660) --> [http-nio-8080-exec-2] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:40,130(14660) --> [http-nio-8080-exec-2] com.mchange.v2.cfg.MConfig.dumpToLogger(MConfig.java:101): The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.  
+[DEBUG] 2022-06-07 08:33:40,132(14662) --> [http-nio-8080-exec-2] com.mchange.v2.resourcepool.BasicResourcePool.<init>(BasicResourcePool.java:360): com.mchange.v2.resourcepool.BasicResourcePool@62693597 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]  
+[DEBUG] 2022-06-07 08:33:40,132(14662) --> [http-nio-8080-exec-2] com.mchange.v2.c3p0.impl.C3P0PooledConnectionPoolManager.getPool(C3P0PooledConnectionPoolManager.java:401): Created new pool for auth, username (masked): 'ro******'.  
+[DEBUG] 2022-06-07 08:33:40,132(14662) --> [http-nio-8080-exec-2] com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:625): acquire test -- pool size: 0; target_pool_size: 3; desired target? 1  
+[DEBUG] 2022-06-07 08:33:40,132(14662) --> [http-nio-8080-exec-2] com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1479): awaitAvailable(): [unknown]  

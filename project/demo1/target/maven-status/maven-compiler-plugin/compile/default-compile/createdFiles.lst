@@ -1,0 +1,6 @@
+com/txy/service/UserService.class
+com/txy/config/Result.class
+com/txy/dao/UserMapper.class
+com/txy/service/Impl/UserServiceImpl.class
+com/txy/controller/UserController.class
+com/txy/domain/User.class
