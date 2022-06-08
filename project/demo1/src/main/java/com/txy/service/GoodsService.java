@@ -1,11 +1,10 @@
 package com.txy.service;
 
-import com.txy.domain.Goods;
 
 import java.util.List;
 
 public interface GoodsService {
-    List<Goods> findByCategory(int category);
+    List<Object> findByCategory(int category);
 
-    String findByName(String name);
+    List<String> findByName(String name);
 }

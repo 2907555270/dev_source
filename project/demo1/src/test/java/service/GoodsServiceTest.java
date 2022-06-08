@@ -1,6 +1,5 @@
 package service;
 
-import com.txy.domain.Goods;
 import com.txy.service.GoodsService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,13 +18,13 @@ public class GoodsServiceTest {
 
     @Test
     public void test_findByCategory(){
-        List<Goods> goods = service.findByCategory(1);
+        List<Object> goods = service.findByCategory(1);
         System.out.println(goods.toString());
     }
 
     @Test
     public void test_findByName(){
-        String a = service.findByName("a");
-        System.out.println(a);
+        List<String> goods = service.findByName("a");
+        System.out.println(goods);
     }
 }

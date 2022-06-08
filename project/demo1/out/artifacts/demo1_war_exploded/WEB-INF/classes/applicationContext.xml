@@ -43,5 +43,9 @@
         <property name="dbName" value="${mongo.dbname}"/>
         <property name="mongoClient" ref="mongoClient"/>
     </bean>
-    <bean id="mongoDatabase" factory-bean="mongoDbFactoryBean" factory-method="getMongoDatabase"/>
+    <!--商品集合-->
+    <bean id="goodsCollection" factory-bean="mongoDbFactoryBean" factory-method="getMongoCollection">
+        <constructor-arg value="goods"/>
+    </bean>
+
 </beans>

@@ -2,11 +2,13 @@ package com.txy.dao;
 
 import com.txy.domain.Goods;
 
+import java.util.List;
+
 
 public interface GoodsDao {
-    String[] findByCategory(int category);
+    List<Object> findByCategory(int category);
 
-    String findByName(String name);
+    List<String> findByName(String name);
 
     boolean save(Goods goods);
 
