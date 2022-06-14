@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Create an account</title>
-    <link rel="stylesheet" href="css/elementUI_index.css">
-    <link rel="stylesheet" href="css/register_style.css">
+    <link rel="stylesheet" href="/lib/css/elementUI_index.css">
+    <link rel="stylesheet" href="/lib/css/register_style.css">
 </head>
 <body>
     <div id="app">
@@ -31,77 +31,71 @@
                 <h4>Create an account for yourself,you can use it to note your own information</h4>
                 <div class="register-form">
                     <el-form :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-ruleForm">
-                        <el-form-item label="Username" prop="username">
-                            <el-col :span="24">
+
+                        <el-col :span="24">
+                            <el-form-item label="Username" prop="username">
                                 <el-input v-model="ruleForm.username"
                                           placeholder="please input your username"></el-input>
-                            </el-col>
-                        </el-form-item>
-                        <el-form-item label="Password" prop="password">
-                            <el-col :span="24">
+                            </el-form-item>
+                        </el-col>
+
+                        <el-col :span="24">
+                            <el-form-item label="Password" prop="password">
                                 <el-input type="password" v-model="ruleForm.password"
                                           placeholder="please input your password" :show-password="true"></el-input>
-                            </el-col>
-                        </el-form-item>
-                        <el-form-item label="Name" prop="name">
-                            <el-col :span="12">
+                            </el-form-item>
+                        </el-col>
+
+                        <el-col :span="12">
+                            <el-form-item label="Name" prop="name">
+
                                 <el-input v-model="ruleForm.name" placeholder="please input your name"></el-input>
-                            </el-col>
-                        </el-form-item>
-                        <el-form-item label="Birthday" required>
-                            <el-col :span="12">
-                                <el-form-item prop="birthday">
-                                    <el-date-picker type="date" placeholder="please set your birthday"
-                                                    v-model="ruleForm.birthday"
-                                                    @change="compute_age" style="width: 100%;"></el-date-picker>
-                                </el-form-item>
-                            </el-col>
-                        </el-form-item>
-                        <el-form-item label="Contact" prop="email">
-                            <el-col :span="11">
+                            </el-form-item>
+                        </el-col>
+
+                        <el-col :span="12">
+                            <el-form-item label="Birthday" prop="birthday" required>
+                                <el-date-picker type="date" placeholder="please set your birthday"
+                                                v-model="ruleForm.birthday"
+                                                @change="compute_age" style="width: 100%;"></el-date-picker>
+                            </el-form-item>
+                        </el-col>
+
+                        <el-col :span="24">
+                            <el-form-item label="Email" prop="email">
                                 <el-input type="text" v-model="ruleForm.email"
                                           placeholder="please input your email"></el-input>
-                            </el-col>
-                            <el-col class="line" :span="2">-</el-col>
-                            <el-col :span="11">
+                            </el-form-item>
+                        </el-col>
+
+                        <el-col :span="24">
+                            <el-form-item label="Phone" prop="phone">
                                 <el-input type="text" v-model="ruleForm.phone"
                                           placeholder="please input your phone"></el-input>
-                            </el-col>
-                        </el-form-item>
-                        <el-form-item label="Address">
-                            <el-col :span="24">
+                            </el-form-item>
+                        </el-col>
+
+                        <el-col :span="24">
+                            <el-form-item label="Address" prop="address">
                                 <el-input type="text" v-model="ruleForm.address"
                                           placeholder="please input your address"></el-input>
-                            </el-col>
-                        </el-form-item>
-                        <el-form-item label="isAdmin">
-                            <el-col :span="11">
-                                <el-tooltip :content="'isAdmin: ' + isAdmin" placement="top">
-                                    <el-switch
-                                            v-model="ruleForm.type"
-                                            active-color="#13ce66"
-                                            inactive-color="#1c2e3c"
-                                            active-value="1"
-                                            inactive-value="0">
-                                    </el-switch>
-                                </el-tooltip>
-                            </el-col>
-                        </el-form-item>
+                            </el-form-item>
+                        </el-col>
                     </el-form>
+                    <h4>Already have an account?let's go to <a href="/login.html">login</a></h4>
                 </div>
-                <h4>Already have an account?let's go to <a href="/login.html">login</a></h4>
             </el-main>
         </el-container>
     </div>
 </body>
-<script src="js/vue.js"></script>
-<script src="js/elementUI_index.js"></script>
-<script src="js/axios.min.js"></script>
+<script src="/lib/js/vue.js"></script>
+<script src="/lib/js/elementUI_index.js"></script>
+<script src="/lib/js/axios.min.js"></script>
 <script>
     let app = new Vue({
         el: "#app",
         data: {
-            isAdmin:"普通用户",
+            isAdmin: "普通用户",
             ruleForm: {},
             rules: {
                 username: [
@@ -116,7 +110,7 @@
                     {required: true, message: "name empty", trigger: 'blur'},
                 ],
                 birthday: [
-                    {type:"date",required: true, message: 'birthday empty', trigger: 'blur'},
+                    {type: "date", required: true, message: 'birthday empty', trigger: 'blur'},
                 ],
                 email: [
                     {required: true, message: "email empty", trigger: "blur"},
@@ -126,8 +120,8 @@
         },
         methods: {
             //前往主页
-            gotoHome:function(){
-                location.href="/index.html";
+            gotoHome: function () {
+                location.href = "/index.html";
             },
             //重置登录表单内容
             resetForm: function (formName) {
@@ -139,13 +133,14 @@
                     if (valid) {
                         // 表单验证成功
                         //    axios提交表单
-                        axios.post("/user/register",this.ruleForm).then((res)=>{
-                            if(res.data.flag){
+                        axios.post("/user/register", this.ruleForm).then((res) => {
+                            if (res.data.flag) {
+                                let dom = this;
                                 this.$message.success(res.data.msg);
-                                this.$message.info("为您跳转到登录页面");
-                                location.href="/login.html";
-                            }
-                            else{
+                                setTimeout((function (){dom.$message.info("即将为您跳转到登录页面...");}),500);
+                                //设置定时跳转
+                                setTimeout((function (){location.href="/login.html"}),2000);
+                            } else {
                                 this.$message.error(res.data.msg);
                             }
                         });

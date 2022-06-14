@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="css/elementUI_index.css">
-    <link rel="stylesheet" href="css/login_style.css">
+    <link rel="stylesheet" href="/lib/css/elementUI_index.css">
+    <link rel="stylesheet" href="/lib/css/login_style.css">
 </head>
 <body>
     <div id="app">
         <el-container class="main-face">
             <!--左边-->
             <el-container class="left-box">
-                <img src="img/login_bg.jpg" class="image">
+                <img src="/lib/img/login_bg.jpg" class="image">
                 <h1>We've been using Untitled to kick start every new project and can't imaging working without it
                 </h1>
             </el-container>
@@ -76,9 +76,9 @@
         </el-container>
     </div>
 </body>
-<script src="js/vue.js"></script>
-<script src="js/elementUI_index.js"></script>
-<script src="js/axios.min.js"></script>
+<script src="/lib/js/vue.js"></script>
+<script src="/lib/js/elementUI_index.js"></script>
+<script src="/lib/js/axios.min.js"></script>
 <script>
     let app = new Vue({
         el: "#app",
@@ -93,19 +93,12 @@
         },
         methods: {
 
-            //测试连通性
-            test: function () {
-                axios.get("/travel?title=title").then((res) => {
-                    this.$message.info(res.data.flag);
-                });
-            },
-
             //提交登录表单
             submitFormLogin: function () {
                 axios.get("/user/login",{params:this.loginForm}).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
-                        location.href = "index.html";
+                        location.href = "/index.html";
                     } else {
                         this.$message.error(res.data.msg);
                         this.loginForm.password = "";

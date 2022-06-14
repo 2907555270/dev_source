@@ -27,18 +27,12 @@
 
     <!--拦截器-->
     <mvc:interceptors>
+        <!--管理员拦截器-->
         <mvc:interceptor>
-            <mvc:mapping path="/**"/>
-            <mvc:exclude-mapping path="/*/login"/>
-            <mvc:exclude-mapping path="/login.html"/>
-            <mvc:exclude-mapping path="/admin.html"/>
-            <mvc:exclude-mapping path="/adminMain.html"/>
-            <mvc:exclude-mapping path="/css/*"/>
-            <mvc:exclude-mapping path="/js/*"/>
-            <mvc:exclude-mapping path="/font/*"/>
-            <mvc:exclude-mapping path="/img/*"/>
-            <mvc:exclude-mapping path="/json/*"/>
-            <bean class="com.txy.interceptor.UserLoginInterceptor"/>
+            <mvc:mapping path="/pages/admin/*.html"/>
+            <mvc:mapping path="/admin/**"/>
+            <mvc:exclude-mapping path="/admin/login"/>
+            <bean class="com.txy.interceptor.AdminInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 </beans>

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Admin</title>
-    <link rel="stylesheet" href="css/elementUI_index.css">
-    <link rel="stylesheet" href="css/admin_style.css">
+    <link rel="stylesheet" href="/lib/css/elementUI_index.css">
+    <link rel="stylesheet" href="/lib/css/admin_style.css">
 
-    <script src="js/vue.js"></script>
-    <script src="js/elementUI_index.js"></script>
+    <script src="/lib/js/vue.js"></script>
+    <script src="/lib/js/elementUI_index.js"></script>
 </head>
 <body>
     <div id="app">
@@ -49,8 +49,8 @@
         </el-container>
     </div>
 </body>
-<script src="js/vue.js"></script>
-<script src="js/elementUI_index.js"></script>
+<script src="/lib/js/vue.js"></script>
+<script src="/lib/js/elementUI_index.js"></script>
 <script>
     let app = new Vue({
         el: "#app",
@@ -58,8 +58,8 @@
             //右侧显示内容
             right_title: "Login",
             titles: ["Login","UserInfo", "TravelInfo"],
-            right_page: "adminMain.html",
-            pages: ["adminMain.html","adminUser.html", "adminTravel.html"],
+            right_page: "/adminMain.html",
+            pages: ["/adminMain.html","/pages/admin/adminUser.html", "/pages/admin/adminTravel.html"],
 
         },
         methods: {

@@ -10,196 +10,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9dea2e3-d577-4839-b531-83d8f1319989" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/eureka_server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/eureka_server/src/main/java/cn/itcast/eureka/EurekaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/eureka_server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/order_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/order_service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/product_service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/product_service/product_service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/product_service/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Microservice/spring_cloud_demo/spring_cloud_demo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/config/TravelPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/config/UserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/interceptor/UserLoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/mapper/AdminMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/AdminService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/AdminServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/TravelServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/utils/MongoClientImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/txy/mapper/AdminMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/sqlMapConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminMain.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminTravel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/adminUser.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/admin_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/elementUI_index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/index_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/login_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/register_style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/element-icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/font/element-icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/img/login_bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/elementUI_index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/vue.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/json/travel-mongo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/json/travel.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/json/user.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/dao/AdminDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/service/AdminServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/controller/TravelController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/dao/Impl/TravelDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/dao/TravelDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/domain/Travel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../demo1_boot/src/test/java/com/example/demo1_boot/dao/TravelDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../article/learning_notes/开发过程中的疑难文章.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../article/learning_notes/开发过程中的疑难文章.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MicroService/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MicroService/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MicroService/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MicroService/src/main/java/com/example/microservice/ConfigController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MicroService/src/main/java/com/example/microservice/MicroServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MicroService/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/config/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/dao/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/dao/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/com/txy/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_Web_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/config/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/GoodsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/dao/GoodsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/dao/Impl/GoodsDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/dao/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/dao/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/domain/Goods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/factory/MongoDbFactoryBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/service/Impl/GoodsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/mongo.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/aspectjweaver-1.9.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/c3p0-0.9.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/hamcrest-core-1.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/jackson-annotations-2.13.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/jackson-core-2.13.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/jackson-databind-2.13.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/junit-4.12.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/log4j-1.2.17.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/lombok-1.18.22.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/mchange-commons-java-0.2.19.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/mongo-java-driver-3.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/mybatis-3.5.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/mybatis-spring-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/mysql-connector-java-8.0.27.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/protobuf-java-3.11.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-aop-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-beans-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-context-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-core-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-expression-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-jcl-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-jdbc-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-test-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-tx-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-web-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib/spring-webmvc-5.0.5.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/config/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/config/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/GoodsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/TravelDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/GoodsDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/TravelDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Travel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/factory/MongoDbFactoryBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/TravelService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/GoodsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/txy/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/txy/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/TravelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/interceptor/UserLoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminTravel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminUser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/admin_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/elementUI_index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/index_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/login_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/register_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/font/element-icons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/font/element-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/img/login_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/axios.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/elementUI_index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/vue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/json/travel-mongo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/json/travel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/json/user.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/domain/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Travel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/interceptor/UserLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/interceptor/AdminInterceptor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/GoodsDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/TravelDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dao/UserDaoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/GoodsServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/TravelServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/config/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/GoodsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/dao/GoodsDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/dao/Impl/GoodsDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/domain/Goods.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/domain/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/factory/MongoDbFactoryBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/mapper/UserMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/mapper/UserMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/GoodsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/Impl/GoodsServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/Impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.GoodsDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-dao.UserDaoTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.GoodsServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.MongoConnectionTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-service.UserServiceTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/dao.GoodsDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/dao.UserDaoTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.GoodsServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.MongoConnectionTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/service.UserServiceTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/GoodsDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/dao/UserDaoTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/GoodsServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/service/UserServiceTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/Demo1BootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/Demo1BootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/dao/GoodsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/dao/Impl/GoodsRepositoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/domain/Goods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1_boot/src/main/java/com/example/demo1_boot/domain/Goods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1_boot/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/test/java/com/example/demo1_boot/Demo1BootApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo1_boot/src/test/java/com/example/demo1_boot/Demo1BootApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../demo1_boot/src/test/java/com/example/demo1_boot/dao/GoodsRepositoryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminMain.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminTravel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminUser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/admin_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/admin_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/elementUI_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/elementUI_index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/index_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/login_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/register_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/register_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font/element-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/font/element-icons.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/font/element-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/font/element-icons.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/login_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/img/login_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/elementUI_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/elementUI_index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/vue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/travel-mongo.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/json/travel-mongo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/travel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/json/travel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/json/user.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/controller/TravelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/interceptor/UserLoginInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +97,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/txy/dao/TravelDao.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/txy/service/Impl/TravelServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/txy/service/TravelService.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/main/webapp/adminTravel.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -278,9 +142,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/pages/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/lib" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
       <recent name="$PROJECT_DIR$/src/main" />
-      <recent name="$PROJECT_DIR$/src/main/java/webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.11">
@@ -458,9 +324,9 @@
       <item itemvalue="JUnit.TravelDaoTest.test_save" />
       <item itemvalue="JUnit.TravelDaoTest.test_findAll" />
       <item itemvalue="JUnit.TravelDaoTest.test_findConditions" />
-      <item itemvalue="Tomcat Server.Tomcat 10.0.11" />
       <item itemvalue="JUnit.AdminDaoTest.test_updatePassword" />
       <item itemvalue="JUnit.AdminServiceTest.test_update" />
+      <item itemvalue="Tomcat Server.Tomcat 10.0.11" />
     </list>
     <recent_temporary>
       <list>
@@ -503,7 +369,9 @@
       <workItem from="1655089617824" duration="3431000" />
       <workItem from="1655095952164" duration="6965000" />
       <workItem from="1655121241677" duration="16062000" />
-      <workItem from="1655163590392" duration="9959000" />
+      <workItem from="1655163590392" duration="12588000" />
+      <workItem from="1655183014643" duration="1805000" />
+      <workItem from="1655197553836" duration="9717000" />
     </task>
     <servers />
   </component>

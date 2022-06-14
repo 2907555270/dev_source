@@ -1,6 +1,6 @@
 <html>
 <head>
-    <link rel="stylesheet" href="css/elementUI_index.css">
+    <link rel="stylesheet" href="/lib/css/elementUI_index.css">
 </head>
 <body>
     <div id="travelInfo">
@@ -118,12 +118,12 @@
                 </el-col>
                 <el-col span="12">
                     <el-form-item label="author">
-                        <el-input v-model="operationForm.author" placeholder="author" disabled></el-input>
+                        <el-input v-model="operationForm.author" placeholder="author"></el-input>
                     </el-form-item>
                 </el-col>
                 <el-col span="24">
                     <el-form-item label="img">
-                        <el-input v-model="operationForm.img" placeholder="img" disabled></el-input>
+                        <el-input v-model="operationForm.img" placeholder="img" ></el-input>
                     </el-form-item>
                 </el-col>
             </el-form>
@@ -134,9 +134,9 @@
         </el-dialog>
     </div>
 </body>
-<script src="js/vue.js"></script>
-<script src="js/elementUI_index.js"></script>
-<script src="js/axios.min.js"></script>
+<script src="/lib/js/vue.js"></script>
+<script src="/lib/js/elementUI_index.js"></script>
+<script src="/lib/js/axios.min.js"></script>
 <script>
     let app = new Vue({
         el: "#travelInfo",
