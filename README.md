@@ -1,9 +1,5 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/2907555270/dev_source/edit/dev_source/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
 ### Resource navigation
 
 You can click on any link to get the resource you want (project only redirects to the Github resource path)
@@ -28,10 +24,6 @@ I'll record a few things here:
   - [Garbage Classify](https://github.com/2907555270/dev_source/tree/main/project/Garbage%20Classify)
 - WEB
     
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/2907555270/dev_source/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
 
