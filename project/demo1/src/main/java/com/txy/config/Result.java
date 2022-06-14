@@ -12,6 +12,10 @@ public class Result {
     private String msg;
     private Object data;
 
+    public Result(boolean flag){
+        this.flag = flag;
+    }
+
     public Result(boolean flag, String msg) {
         this.flag = flag;
         this.msg = msg;

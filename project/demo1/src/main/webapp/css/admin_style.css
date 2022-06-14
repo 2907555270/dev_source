@@ -1,0 +1,48 @@
+/*初始化页面布局*/
+body{
+    background-color: #c8cacb;
+}
+.main-box{
+    margin: 1rem;
+    background-color: white;
+}
+
+/*页面标题*/
+.main-box .headline{
+    text-align: center;
+    background-color: #666666;
+}
+.main-box .headline h1{}
+
+/*左侧导航*/
+.content-box .aside-menu{
+    /*background-color: #67C23A;*/
+}
+.content-box .aside-menu .el-menu{
+    height: 37rem;
+}
+.content-box .aside-menu .el-menu-item{
+    font-size: 1rem;
+}
+
+/*右侧内容*/
+.content-box .main-content{
+    background-color: white;
+}
+.content-box .main-content .main-nav{
+    font-size: larger;
+    margin: auto auto 2rem;
+    padding: 0 0 1rem;
+    border-bottom: 1px solid white;
+}
+
+.content-box .form-content iframe{
+    width: 100%;
+    height: 33rem;
+    border: none;
+}
+/*未登录的提示*/
+.content-box .blank_msg{
+    text-align: center;
+    color: gray;
+}

@@ -1,5 +1,5 @@
-dao/GoodsDaoTest.class
+dao/TravelDaoTest.class
 service/UserServiceTest.class
-service/GoodsServiceTest.class
+service/TravelServiceTest.class
 dao/UserDaoTest.class
-service/MongoConnectionTest.class
+service/AdminServiceTest.class

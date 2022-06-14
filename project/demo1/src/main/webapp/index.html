@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/elementUI_index.css">
+    <link rel="stylesheet" href="css/index_style.css">
+</head>
+<body>
+    <div id="app">
+        <div>
+            <el-backtop :visibility-height="300" :right="100" :bottom="100">
+                <div class="goto_up">UP</div>
+            </el-backtop>
+        </div>
+        <el-container style="background-color: #ffffff;margin: 20px">
+            <!--导航栏-->
+            <el-header class="top-box1">
+                <el-menu
+                        class="el-menu-demo"
+                        mode="horizontal"
+                        background-color="#fff"
+                        text-color="#000"
+                        active-text-color="#fff">
+                    <el-menu-item index="1" class="menu-item-brand">Fashion</el-menu-item>
+                    <el-menu-item index="4" class="menu-item-content"><a href="">Message</a></el-menu-item>
+                    <el-menu-item index="3" class="menu-item-content"><a href="">Favorite</a></el-menu-item>
+                    <el-menu-item index="4" class="menu-item-content"><a href="">Personal</a></el-menu-item>
+                    <el-menu-item v-if="isLogin" index="4" class="menu-item-content"><a href="">Login</a></el-menu-item>
+                    <el-menu-item v-else index="4" class="menu-item-content"><a href="">Logout</a></el-menu-item>
+                </el-menu>
+            </el-header>
+
+            <!--中间内容-->
+            <el-main class="center-box1">
+                <!--轮播图-->
+                <div class="center-img">
+                    <el-carousel :interval="4000" type="card" height="230px">
+                        <el-carousel-item class="center-img-item" v-for="item in urls" :key="item">
+                            <el-image :src="item"></el-image>
+                        </el-carousel-item>
+                    </el-carousel>
+                </div>
+                <!--搜索框-->
+                <div class="search_box">
+                    <div>
+                        <el-input placeholder="请输入内容" clearable="true" v-model="search_content"
+                                  class="input-with-select">
+                            <el-select v-model="search_type" slot="prepend" placeholder="请选择">
+                                <el-option v-for="(select,index) in search_selection" :label="select"
+                                           :value="select"></el-option>
+                            </el-select>
+                            <el-button slot="append" icon="el-icon-search"></el-button>
+                        </el-input>
+                    </div>
+                </div>
+
+                <!--标题-->
+                <h2>See the world and broaden your horizons</h2>
+                <!--分类标签-->
+                <div class="center-category">
+                    <el-tabs v-model="activeName" type="card">
+                        <el-tab-pane v-for="(item,index) in category" :label="item"></el-tab-pane>
+                    </el-tabs>
+                </div>
+                <!--物品图片-->
+                <div class="center-content1">
+                    <el-row v-for="o in 2" :key="o" style="margin-top: 2rem">
+                        <el-col :span="5" v-for="(item,index) in travel" :key="index" :offset="index > 0 ? 1 : 0">
+                            <el-card>
+                                <img :src="item.img" class="image">
+                                <div style="padding: 14px;">
+                                    <span class="title">{{item.title}}</span>
+                                    <div class="bottom clearfix">
+                                        <span>{{item.description}}</span><br/>
+                                    </div>
+                                </div>
+                            </el-card>
+                        </el-col>
+                    </el-row>
+                </div>
+                <!--分页-->
+                <div class="page_content">
+                    <el-pagination
+                            :current-page="currentPage4"
+                            :page-size="pageSize"
+                            :total="total"
+                            hide-on-single-page:true
+                            layout="total, prev, pager, next, jumper"
+                            >
+                    </el-pagination>
+                </div>
+
+                <!--标题-->
+                <h2>You might also be interested in...</h2>
+                <div class="center-content2">
+                    <el-row style="margin-top: 2rem">
+                        <el-col :span="5" v-for="(o, index) in 4" :key="o" :offset="index > 0 ? 1 : 0">
+                            <el-card :style="{'background-color': function_colors[index]}">
+                                <img :src="function_urls[o-1]" class="image">
+                                <div style="padding: 14px;">
+                                    <span class="title">Function Title</span>
+                                    <div class="bottom clearfix">
+                                        <span>Function Description</span><br/>
+                                    </div>
+                                </div>
+                            </el-card>
+                        </el-col>
+                    </el-row>
+                </div>
+                <div class="other-function">
+                    <el-collapse accordion>
+                        <el-collapse-item>
+                            <div slot="title" class="title">
+                                Function one<i class="header-icon el-icon-info"></i>
+                            </div>
+                            <div>与现实生活一致：与现实生活的流程、逻辑保持一致，遵循用户习惯的语言和概念；</div>
+                            <div>在界面中一致：所有的元素和结构需保持一致，比如：设计样式、图标和文本、元素的位置等。</div>
+                        </el-collapse-item>
+                        <el-collapse-item>
+                            <div slot="title" class="title">
+                                Function two
+                            </div>
+                            <div>控制反馈：通过界面样式和交互动效让用户可以清晰的感知自己的操作；</div>
+                            <div>页面反馈：操作后，通过页面元素的变化清晰地展现当前状态。</div>
+                        </el-collapse-item>
+                        <el-collapse-item>
+                            <div slot="title" class="title">
+                                Function Three
+                            </div>
+                            <div>简化流程：设计简洁直观的操作流程；</div>
+                            <div>清晰明确：语言表达清晰且表意明确，让用户快速理解进而作出决策；</div>
+                            <div>帮助用户识别：界面简单直白，让用户快速识别而非回忆，减少用户记忆负担。</div>
+                        </el-collapse-item>
+                        <el-collapse-item>
+                            <div slot="title" class="title">
+                                Function Four
+                            </div>
+                            <div>用户决策：根据场景可给予用户操作建议或安全提示，但不能代替用户进行决策；</div>
+                            <div>结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等。</div>
+                        </el-collapse-item>
+                    </el-collapse>
+                </div>
+
+                <!--标题-->
+                <h2>Best wishes to you...</h2>
+                <!--分隔文案-->
+                <div class="article">
+                    <span>头上一片晴天，心中一个想念</span>
+                    <el-divider content-position="left">少年包青天</el-divider>
+                    <span>旅行的意义不在其他，而在自我"身体和心灵，必须有一个在旅行的路上"。</span>
+                    <el-divider><i class="el-icon-reading"></i></el-divider>
+                    <span>对未知的恐惧，对舒适的留恋将阻止我们成为一个旅行者走上的冒险旅程。
+                        可是，当你作出这样的选择，你就永远不会后悔</span>
+                    <el-divider content-position="left"><i class="el-icon-bicycle"></i></el-divider>
+                    <span>为了无法计算的价值</span>
+                    <el-divider content-position="right">阿里云</el-divider>
+                </div>
+            </el-main>
+
+            <!--底部-->
+            <el-footer>
+
+            </el-footer>
+        </el-container>
+
+    </div>
+</body>
+<script src="js/axios.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/elementUI_index.js"></script>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            user:{
+
+            },
+            activeIndex: '1',
+            travel:[
+                //模拟数据--无后端数据时显示
+                {
+                    tid:"",
+                    title:"Title",
+                    description:"Description",
+                    category:"",
+                    img:'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
+                },
+                {
+                    tid:"",
+                    title:"Title",
+                    description:"Description",
+                    category:"",
+                    img:'https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg',
+                },
+                {
+                    tid:"",
+                    title:"Title",
+                    description:"Description",
+                    category:"",
+                    img:'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg',
+                },
+                {
+                    tid:"",
+                    title:"Title",
+                    description:"Description",
+                    category:"",
+                    img:'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg',
+                },
+            ],
+            //攻略图片
+            urls: [
+                'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
+                'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg',
+                'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg',
+                'https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg',
+                'https://fuss10.elemecdn.com/d/e6/c4d93a3805b3ce3f323f7974e6f78jpeg.jpeg',
+                'https://fuss10.elemecdn.com/3/28/bbf893f792f03a54408b3b7a7ebf0jpeg.jpeg',
+                'https://fuss10.elemecdn.com/2/11/6535bcfb26e4c79b48ddde44f4b6fjpeg.jpeg'
+            ],
+            //搜索框
+            search_content: "",
+            search_type: "",
+            search_selection: ["Title", "description"],
+            // 分类导航
+            activeName: "自然",
+            category: ["自然", "城市", "网红打卡", "乡村", "单车", "越野"],
+            // 分页
+            currentPage4:1,
+            pageSize:8,
+            total:400,
+
+            //功能模块展示图片
+            function_urls: [
+                'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
+                'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg',
+                'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg',
+                'https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg',
+            ],
+            function_colors:['#67c23a','#e6a23c','#53a8ff','#909399'],
+        },
+        created(){
+            this.getTravel();
+        },
+        methods:{
+            //获取旅游攻略数据
+            getTravel:function (){
+                axios.get("/json/travel.json").then((res)=>{
+                    this.travel = res.data.data.travel;
+                });
+            }
+        },
+        computed: {
+            //登录或则登出
+            isLogin:function (){
+                return this.user!==null;
+            }
+        },
+    })
+</script>
+</html>

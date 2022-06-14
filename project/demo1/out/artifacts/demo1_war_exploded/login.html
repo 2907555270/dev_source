@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/elementUI_index.css">
+    <link rel="stylesheet" href="css/login_style.css">
+</head>
+<body>
+    <div id="app">
+        <el-container class="main-face">
+            <!--左边-->
+            <el-container class="left-box">
+                <img src="img/login_bg.jpg" class="image">
+                <h1>We've been using Untitled to kick start every new project and can't imaging working without it
+                </h1>
+            </el-container>
+
+            <!--右边-->
+            <el-container class="right-box">
+
+                <!--登录表单-->
+                <div class="login_form">
+                    <!--标题-->
+                    <h1>Log in</h1>
+                    <h3>Let's start with your new world</h3>
+                    <el-form :model="loginForm" status-icon label-width="100px">
+                        <el-form-item label="Username">
+                            <el-input type="text" v-model="loginForm.username"
+                                      placeholder="Please input your userName"></el-input>
+                        </el-form-item>
+                        <el-form-item label="Password">
+                            <el-input type="password" v-model="loginForm.password"
+                                      placeholder="Please input your password" show-password=true></el-input>
+                        </el-form-item>
+                        <el-form-item>
+                            <el-button @click="submitFormLogin">Log in</el-button>
+                            <el-button @click="gotoRegister">Create an account</el-button>
+                        </el-form-item>
+                    </el-form>
+                    <span>forget password? <a href="javascript:void(0);" @click="drawer=true">let's go to update it</a> </span>
+                    <br/><br/>
+                    <span>want to see it first? click on the <a href="index.html">home page</a></span>
+                </div>
+            </el-container>
+        </el-container>
+        <el-container>
+            <!--修改密码-->
+            <div class="update-password">
+                <el-drawer
+                        title="修改密码"
+                        :visible.sync="drawer"
+                        :direction="direction"
+                        :before-close="handleClose">
+                    <div class="update-form">
+                        <el-form :model="updateForm" status-icon label-width="100px">
+                            <el-form-item label="Username">
+                                <el-input type="text" v-model="updateForm.username" autocomplete="off"
+                                          placeholder="Please input your userName"></el-input>
+                            </el-form-item>
+                            <el-form-item label="Password">
+                                <el-input type="password" v-model="updateForm.password" autocomplete="off"
+                                          placeholder="Please input your password" :show-password=true></el-input>
+                            </el-form-item>
+                            <el-form-item label="Email">
+                                <el-input type="email" v-model="updateForm.email" autocomplete="off"
+                                          placeholder="Please input your email"></el-input>
+                            </el-form-item>
+                            <el-form-item>
+                                <el-button @click="submitFormUpdate">Update</el-button>
+                            </el-form-item>
+                        </el-form>
+                    </div>
+                </el-drawer>
+            </div>
+        </el-container>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/elementUI_index.js"></script>
+<script src="js/axios.min.js"></script>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            //登录表单
+            loginForm: {},
+            //修改密码表单
+            updateForm: {},
+            // UI组件
+            drawer: false,
+            direction: 'rtl',
+        },
+        methods: {
+
+            //测试连通性
+            test: function () {
+                axios.get("/travel?title=title").then((res) => {
+                    this.$message.info(res.data.flag);
+                });
+            },
+
+            //提交登录表单
+            submitFormLogin: function () {
+                axios.get("/user/login",{params:this.loginForm}).then((res) => {
+                    if (res.data.flag) {
+                        this.$message.success(res.data.msg);
+                        location.href = "index.html";
+                    } else {
+                        this.$message.error(res.data.msg);
+                        this.loginForm.password = "";
+                    }
+                });
+            },
+
+            //提交密码修改表单
+            submitFormUpdate: function () {
+                axios.put("/user/update_pwd", this.updateForm).then((res) => {
+                    if (res.data.flag) {
+                        this.$message.success(res.data.msg);
+                        //关闭修改窗
+                        this.drawer = false;
+                    } else {
+                        this.$message.error(res.data.msg);
+                    }
+                });
+            },
+
+            //重置登录表单内容
+            gotoRegister(){
+                location.href="/register.html";
+            },
+
+            //关闭修改密码的弹窗
+            handleClose(done) {
+                done();
+            }
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,92 @@
+body {
+    background-color: #c8cacb;
+}
+.main-face{
+    background-color: #000000;
+    margin: 1rem;
+    z-index: 1;
+}
+/*左部分*/
+.left-box{
+    width: 62.8%;
+    height: 40rem;
+}
+.left-box .image{
+    width: 60%;
+    height: 40rem;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    fill-rule: nonzero;
+}
+.left-box h1{
+    z-index: 2;
+    text-align: center;
+    margin: auto 6rem;
+    color: #e6e8ec;
+    font-size: 2rem;
+    line-height: 4rem;
+    word-spacing: 0.8rem;
+    opacity: 0.6;
+}
+
+
+/*右部分*/
+.right-box{
+    width: 40%;
+    background-color: white;
+}
+.right-box h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.right-box h3{
+    margin-top: 1rem;
+    color: #666666;
+}
+.right-box .login_form{
+    margin: auto;
+}
+.right-box .login_form .el-input{
+    width: 16rem;
+}
+.right-box .login_form .el-button{
+    display: block;
+    width: 16rem;
+    margin: auto auto 0.5rem;
+    background-color: #111727;
+    font-size: larger;
+    color: #c8cacb  ;
+}
+.right-box span{
+    color: gray;
+}
+.right-box span a{
+    color: black;
+    font-size: 1rem;
+}
+
+
+/*修改密码弹窗*/
+.update-password .el-drawer{
+    width: 50rem;
+    margin: auto;
+}
+.update-password #el-drawer__title span{
+    border-bottom: 2px grey dashed;
+    text-align: center;
+    font-size: larger;
+}
+.update-password .el-drawer__body{
+}
+.update-password .update-form .el-input {
+    width: 16rem;
+}
+.update-password .update-form .el-button{
+    width: 16rem;
+    margin: auto auto 0.5rem;
+    background-color: #111727;
+    font-size: larger;
+    color: #c8cacb  ;
+}

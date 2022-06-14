@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="css/elementUI_index.css">
+    <link rel="stylesheet" href="css/admin_style.css">
+
+    <script src="js/vue.js"></script>
+    <script src="js/elementUI_index.js"></script>
+</head>
+<body>
+    <div id="app">
+        <el-container class="main-box">
+            <!--头部title-->
+            <el-header class="headline">
+                <h1>Management System</h1>
+            </el-header>
+            <!--下方内容-->
+            <el-container class="content-box">
+                <!--左侧导航-->
+                <el-aside class="aside-menu">
+                    <el-col>
+                        <el-menu default-active="1" class="el-menu-vertical-demo"
+                                 background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+                            <el-menu-item index="1" @click=choose_fun>
+                                <i class="el-icon-s-home"></i>
+                                <span slot="title">Admin Login</span>
+                            </el-menu-item>
+                            <el-menu-item index="2" @click=choose_fun>
+                                <i class="el-icon-menu"></i>
+                                <span slot="title">UserInfo Management</span>
+                            </el-menu-item>
+                            <el-menu-item index="3" @click=choose_fun>
+                                <i class="el-icon-document"></i>
+                                <span slot="title">TravelInfo Management</span>
+                            </el-menu-item>
+                        </el-menu>
+                    </el-col>
+                </el-aside>
+                <!--右侧表单-->
+                <el-main class="main-content">
+                    <!--表单内容-->
+                    <div  class="form-content">
+                        <iframe :src=right_page></iframe>
+                    </div>
+                </el-main>
+            </el-container>
+        </el-container>
+    </div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/elementUI_index.js"></script>
+<script>
+    let app = new Vue({
+        el: "#app",
+        data: {
+            //右侧显示内容
+            right_title: "Login",
+            titles: ["Login","UserInfo", "TravelInfo"],
+            right_page: "adminMain.html",
+            pages: ["adminMain.html","adminUser.html", "adminTravel.html"],
+
+        },
+        methods: {
+            //选择导航栏功能
+            choose_fun: function (info) {
+                this.right_title = this.titles[info._uid - 8]
+                this.right_page = this.pages[info._uid - 8];
+            }
+        }
+    })
+</script>
+</html>

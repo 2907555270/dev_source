@@ -17,5 +17,4 @@ public class User {
     private String phone;
     private String email;
     private String head_img;
-    private Integer type;
 }

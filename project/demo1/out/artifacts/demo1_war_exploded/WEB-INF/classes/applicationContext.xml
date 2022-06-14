@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans.xsd
-       http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context.xsd
-">
+       xsi:schemaLocation=
+               "http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans.xsd
+               http://www.springframework.org/schema/context
+               https://www.springframework.org/schema/context/spring-context.xsd">
 
 
     <context:property-placeholder location="classpath:jdbc.properties"/>
@@ -16,36 +16,33 @@
     </context:component-scan>
 
     <!--mysql-->
-    <!--事务管理器-->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource"/>
-    </bean>
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${mysql.driver}"/>
         <property name="jdbcUrl" value="${mysql.url}"/>
         <property name="user" value="${mysql.username}"/>
         <property name="password" value="${mysql.password}"/>
     </bean>
+    <!--事务管理-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
     <bean class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
         <property name="typeAliasesPackage" value="com.txy.domain"/>
+        <property name="configLocation" value="classpath:sqlMapConfig.xml"/>
     </bean>
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.txy.mapper"/>
     </bean>
 
-    <!--mongodb-->
-    <bean id="mongoClient" class="com.mongodb.MongoClient">
-        <constructor-arg name="host" value="${mongo.host}"/>
-        <constructor-arg name="port" value="${mongo.port}"/>
-    </bean>
-    <bean id="mongoDbFactoryBean" class="com.txy.factory.MongoDbFactoryBean">
-        <property name="dbName" value="${mongo.dbname}"/>
-        <property name="mongoClient" ref="mongoClient"/>
-    </bean>
-    <!--商品集合-->
-    <bean id="goodsCollection" factory-bean="mongoDbFactoryBean" factory-method="getMongoCollection">
-        <constructor-arg value="goods"/>
-    </bean>
 
+    <!--mongodb-->
+    <bean id="mongoClient" class="org.springframework.data.mongodb.core.MongoClientFactoryBean">
+        <property name="host" value="${mongo.host}"/>
+        <property name="port" value="${mongo.port}"/>
+    </bean>
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg ref="mongoClient"/>
+        <constructor-arg name="databaseName" value="${mongo.dbname}"/>
+    </bean>
 </beans>

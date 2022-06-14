@@ -19,7 +19,26 @@ public class UserDaoTest {
 
     @Before
     public void before() {
-        user = new User(null, "test", "test", "test", 10, "test", "123", "2907@qq.com", "/home/pic.img", 0);
+        user = new User(null, "test", "test", "test", 10, "test", "123", "2907@qq.com", "/home/pic.img");
+    }
+
+    @Test
+    public void test_findAll(){
+        System.out.println(mapper.findAll());
+    }
+
+    @Test
+    public void test_findByConditions(){
+        User u1 = new User();
+        u1.setUsername("t");
+        System.out.println(mapper.findByConditions(u1));
+    }
+
+
+    @Test
+    public void test_updatePassword(){
+        user.setPassword("123456");
+        mapper.updatePassword(user);
     }
 
     @Test
@@ -29,21 +48,14 @@ public class UserDaoTest {
     }
 
     @Test
-    public void test_findByUsername(){
-        System.out.println(mapper.findByUsername(user));
-    }
-
-    @Test
-    public void test_findByUsernameAndPassword() {
-        User user1 = mapper.findByUsernameAndPassword(user);
-        System.out.println(user1.toString());
-    }
-
-    @Test
     public void test_update(){
         user.setUid(1);
         user.setAge(20);
         int update = mapper.update(user);
         System.out.println(update);
+    }
+
+    public void test_delete(){
+        mapper.delete("aa");
     }
 }
