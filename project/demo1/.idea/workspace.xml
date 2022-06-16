@@ -10,60 +10,56 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9dea2e3-d577-4839-b531-83d8f1319989" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/TravelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/interceptor/UserLoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/config/ResumePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/ResumeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/ResumeDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/ResumeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Resume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/BaseInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/BasicInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/EducationInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/PersonalAbility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/PersonalProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/ProjectExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/resume/WinnerHonor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/Impl/ResumeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/service/ResumeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/utils/HelloPDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/txy/utils/HtmlToPdf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/ResumeInfo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/ResumeInfo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/resume_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/resume_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminResume.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/resume.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/dao/ResumeDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/ResumeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../article/learning_notes/开发过程中的疑难文章.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../article/learning_notes/开发过程中的疑难文章.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/dao/Impl/TravelDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/dao/Impl/TravelDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/utils/MongoClientImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminTravel.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/adminUser.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/admin_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/elementUI_index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/index_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/login_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/css/register_style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/font/element-icons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/font/element-icons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/img/login_bg.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/axios.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/elementUI_index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/vue.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/js/vue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/json/travel-mongo.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/json/travel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/json/user.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/pages/admin/adminTravel.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/pages/admin/adminTravel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/pages/admin/adminUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/pages/admin/adminUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/domain/Travel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/domain/Travel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/interceptor/UserLoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/interceptor/AdminInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/TravelDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/dao/Impl/TravelDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/utils/MongoClientImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/admin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/admin.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/adminMain.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/adminMain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminTravel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/adminUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminUser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/admin_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/admin_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/elementUI_index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/elementUI_index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/index_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/index_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/login_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/login_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/register_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/css/register_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font/element-icons.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/font/element-icons.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/font/element-icons.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/font/element-icons.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/img/login_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/img/login_bg.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/axios.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/elementUI_index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/elementUI_index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/vue.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/vue.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/js/vue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/travel-mongo.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/json/travel-mongo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/travel.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/json/travel.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/user.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/lib/json/user.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminUser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminUser.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/controller/TravelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/interceptor/UserLoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/dao/Impl/TravelDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/dao/Impl/TravelDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/utils/MongoClientImpl.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +72,7 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -117,12 +114,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql&#10;mongo" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.data.extractors.current.export.id" value="SQL Inserts" />
-    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/UI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/lib/css" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34168157" />
@@ -133,13 +131,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.txy.domain.resume" />
       <recent name="com.txy.config" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/lib/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/lib/js" />
       <recent name="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/src/main/webapp/css" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/pages/admin" />
@@ -150,7 +150,33 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 10.0.11">
-    <configuration name="AdminDaoTest.test_updatePassword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HelloPDF" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.txy.utils.HelloPDF" />
+      <module name="demo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.txy.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HtmlToPdf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.txy.utils.HtmlToPdf" />
+      <module name="demo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.txy.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResumeDaoTest.test_findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo1" />
       <extension name="coverage">
         <pattern>
@@ -159,14 +185,30 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.AdminDaoTest" />
-      <option name="METHOD_NAME" value="test_updatePassword" />
+      <option name="MAIN_CLASS_NAME" value="dao.ResumeDaoTest" />
+      <option name="METHOD_NAME" value="test_findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminServiceTest.test_update" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResumeDaoTest.test_findByConditions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.ResumeDaoTest" />
+      <option name="METHOD_NAME" value="test_findByConditions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResumeServiceTest.test_findByConditions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo1" />
       <extension name="coverage">
         <pattern>
@@ -175,56 +217,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="service" />
-      <option name="MAIN_CLASS_NAME" value="service.AdminServiceTest" />
-      <option name="METHOD_NAME" value="test_update" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TravelDaoTest.test_findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.TravelDaoTest" />
-      <option name="METHOD_NAME" value="test_findAll" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TravelDaoTest.test_findConditions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.TravelDaoTest" />
-      <option name="METHOD_NAME" value="test_findConditions" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TravelDaoTest.test_save" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.TravelDaoTest" />
-      <option name="METHOD_NAME" value="test_save" />
+      <option name="MAIN_CLASS_NAME" value="service.ResumeServiceTest" />
+      <option name="METHOD_NAME" value="test_findByConditions" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -321,20 +315,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.TravelDaoTest.test_save" />
-      <item itemvalue="JUnit.TravelDaoTest.test_findAll" />
-      <item itemvalue="JUnit.TravelDaoTest.test_findConditions" />
-      <item itemvalue="JUnit.AdminDaoTest.test_updatePassword" />
-      <item itemvalue="JUnit.AdminServiceTest.test_update" />
+      <item itemvalue="Application.HelloPDF" />
+      <item itemvalue="Application.HtmlToPdf" />
+      <item itemvalue="JUnit.ResumeDaoTest.test_findAll" />
+      <item itemvalue="JUnit.ResumeDaoTest.test_findByConditions" />
+      <item itemvalue="JUnit.ResumeServiceTest.test_findByConditions" />
       <item itemvalue="Tomcat Server.Tomcat 10.0.11" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AdminServiceTest.test_update" />
-        <item itemvalue="JUnit.AdminDaoTest.test_updatePassword" />
-        <item itemvalue="JUnit.TravelDaoTest.test_findConditions" />
-        <item itemvalue="JUnit.TravelDaoTest.test_findAll" />
-        <item itemvalue="JUnit.TravelDaoTest.test_save" />
+        <item itemvalue="JUnit.ResumeServiceTest.test_findByConditions" />
+        <item itemvalue="JUnit.ResumeDaoTest.test_findByConditions" />
+        <item itemvalue="JUnit.ResumeDaoTest.test_findAll" />
+        <item itemvalue="Application.HtmlToPdf" />
+        <item itemvalue="Application.HelloPDF" />
       </list>
     </recent_temporary>
   </component>
@@ -372,6 +366,13 @@
       <workItem from="1655163590392" duration="12588000" />
       <workItem from="1655183014643" duration="1805000" />
       <workItem from="1655197553836" duration="9717000" />
+      <workItem from="1655222821352" duration="11000" />
+      <workItem from="1655223513494" duration="2487000" />
+      <workItem from="1655250782810" duration="3525000" />
+      <workItem from="1655271109125" duration="18554000" />
+      <workItem from="1655296876833" duration="941000" />
+      <workItem from="1655307835876" duration="5335000" />
+      <workItem from="1655334823449" duration="1580000" />
     </task>
     <servers />
   </component>

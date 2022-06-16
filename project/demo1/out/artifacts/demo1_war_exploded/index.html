@@ -36,7 +36,7 @@
                 <!--轮播图-->
                 <div class="center-img">
                     <el-carousel :interval="4000" type="card" height="230px">
-                        <el-carousel-item class="center-img-item" v-for="item in urls" :key="item">
+                        <el-carousel-item class="center-img-item" v-for="(item,index) in urls" :key="index">
                             <el-image :src="item"></el-image>
                         </el-carousel-item>
                     </el-carousel>
@@ -44,11 +44,11 @@
                 <!--搜索框-->
                 <div class="search_box">
                     <div>
-                        <el-input placeholder="请输入内容" clearable="true" v-model="queryForm.search_content"
+                        <el-input placeholder="请输入内容" :clearable=true v-model="queryForm.search_content"
                                   class="input-with-select">
                             <el-select v-model="queryForm.search_type" slot="prepend" placeholder="请选择">
                                 <el-option v-for="(select,index) in search_selection" :label="select"
-                                           :value="select"></el-option>
+                                           :value="select" :key="index"></el-option>
                             </el-select>
                             <el-button slot="append" icon="el-icon-search" @click="select"></el-button>
                         </el-input>
@@ -71,7 +71,7 @@
                     <el-row style="margin-top: 2rem">
                         <el-col :span="5" v-for="(item,index) in travel" :key="index" :offset="index > 0 ? 1 : 0">
                             <el-card>
-                                <img :src="item.img" class="image">
+                                <img :src="item.img" class="image"/>
                                 <div style="padding: 14px;">
                                     <span class="title">{{item.title}}</span>
                                     <div class="bottom clearfix">
@@ -99,13 +99,13 @@
                 <h2>You might also be interested in...</h2>
                 <div class="center-content2">
                     <el-row style="margin-top: 2rem">
-                        <el-col :span="5" v-for="(o, index) in 4" :key="o" :offset="index > 0 ? 1 : 0">
-                            <el-card :style="{'background-color': function_colors[index]}">
-                                <img :src="function_urls[o-1]" class="image">
+                        <el-col :span="5" v-for="(item, index) in fun" :key="index" :offset="index > 0 ? 1 : 0">
+                            <el-card :style="{'background-color': item.color}">
+                                <img :src="item.img" class="image">
                                 <div style="padding: 14px;">
-                                    <span class="title">Function Title</span>
+                                    <span class="title"><a :href="item.url">{{item.title}}</a></span>
                                     <div class="bottom clearfix">
-                                        <span>Function Description</span><br/>
+                                        <span>{{item.description}}</span><br/>
                                     </div>
                                 </div>
                             </el-card>
@@ -206,15 +206,34 @@
             //分类标签
             activeName:"all",
 
-            //功能模块图片
-            function_urls: [
-                'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
-                'https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg',
-                'https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg',
-                'https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg',
-            ],
-            //功能模块颜色
-            function_colors:['#67c23a','#e6a23c','#53a8ff','#909399'],
+            //功能模块内容
+            fun:[
+                {
+                    title:"Make A Resume",
+                    description:"Fill in the information and create your resume with one click",
+                    url:"/ResumeInfo.html",
+                    img:"https://cdn.dribbble.com/users/696837/screenshots/11469714/media/4ff179d0325e7306b04cf393c2b2c7a0.png?compress=1&resize=450x338&vertical=top",
+                    color: '#67c23a',
+                },
+                {
+                    title:"Function Title",
+                    description:"Function Description",
+                    img:"https://fuss10.elemecdn.com/1/34/19aa98b1fcb2781c4fba33d850549jpeg.jpeg",
+                    color: '#e6a23c',
+                },
+                {
+                    title:"Function Title",
+                    description:"Function Description",
+                    img:"https://fuss10.elemecdn.com/0/6f/e35ff375812e6b0020b6b4e8f9583jpeg.jpeg",
+                    color: '#53a8ff',
+                },
+                {
+                    title:"Function Title",
+                    description:"Function Description",
+                    img:"https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg",
+                    color: '#909399',
+                }
+            ]
         },
         created(){
             this.getTravel();

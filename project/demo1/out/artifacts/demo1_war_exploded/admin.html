@@ -35,6 +35,10 @@
                                 <i class="el-icon-document"></i>
                                 <span slot="title">TravelInfo Management</span>
                             </el-menu-item>
+                            <el-menu-item index="4" @click=choose_fun>
+                                <i class="el-icon-document"></i>
+                                <span slot="title">ResumeInfo Management</span>
+                            </el-menu-item>
                         </el-menu>
                     </el-col>
                 </el-aside>
@@ -57,9 +61,10 @@
         data: {
             //右侧显示内容
             right_title: "Login",
-            titles: ["Login","UserInfo", "TravelInfo"],
+            titles: ["Login","UserInfo", "TravelInfo","ResumeInfo"],
             right_page: "/adminMain.html",
-            pages: ["/adminMain.html","/pages/admin/adminUser.html", "/pages/admin/adminTravel.html"],
+            pages: ["/adminMain.html","/pages/admin/adminUser.html",
+                "/pages/admin/adminTravel.html","/pages/admin/adminResume.html"],
 
         },
         methods: {

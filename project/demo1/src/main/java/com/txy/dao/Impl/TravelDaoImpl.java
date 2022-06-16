@@ -24,7 +24,7 @@ public class TravelDaoImpl implements TravelDao {
     public PageInfo<Travel> findAll(int currentPage, int pageSize) {
         Query query = new Query();
         //判断页数是否超出：若超出，则默认第一页
-        long total = mongoTemplate.count(query, Travel.class);
+        long total = mongoTemplate.count(query, Travel.class,collection);
         if ((long) (currentPage - 1) * pageSize >= total)
             currentPage = 1;
         //分页查询
@@ -49,7 +49,7 @@ public class TravelDaoImpl implements TravelDao {
 
     @Override
     public boolean update(Travel travel) {
-        Travel update = mongoTemplate.findAndReplace(Query.query(Criteria.where("_id").is(travel.get_id().toString())), travel, collection);
+        Travel update = mongoTemplate.findAndReplace(Query.query(Criteria.where("_id").is(travel.get_id())), travel, collection);
         return update != null;
     }
 
@@ -76,9 +76,10 @@ public class TravelDaoImpl implements TravelDao {
         if (travel.getAuthor() != null) {
             criteriaArrayList.add(Criteria.where("author").regex(Pattern.compile("^.*" + travel.getAuthor() + ".*$")));
         }
-        //组装查询条件
-        query.addCriteria(new Criteria().andOperator(criteriaArrayList));
-        long total = mongoTemplate.count(query, Travel.class);
+        //若有条件 则组装查询条件
+        if(criteriaArrayList.size()>0)
+            query.addCriteria(new Criteria().andOperator(criteriaArrayList));
+        long total = mongoTemplate.count(query, Travel.class,collection);
 
         //组装分页条件
         if ((long) (currentPage - 1) * pageSize >= total)

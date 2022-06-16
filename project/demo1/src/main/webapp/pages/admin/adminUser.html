@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/lib/css/elementUI_index.css">
 </head>
@@ -216,6 +216,7 @@
             // 跳转页面查询
             currentChange: function (info) {
                 this.page.currentPage = info;
+                // 点击页面跳转，保持当前查询条件不变---> 在当前的查询范围内切换页面
                 if (this.status === 0)
                     this.findAll();
                 else

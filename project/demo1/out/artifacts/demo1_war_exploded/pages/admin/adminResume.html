@@ -1,0 +1,333 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/lib/css/elementUI_index.css">
+</head>
+<body>
+    <div id="resumeInfo">
+        <!--标题-->
+        <h2>resume Management</h2>
+        <hr>
+
+        <!--查询-->
+        <el-form :inline="true" class="demo-form-inline" :model="queryForm.resume">
+            <el-form-item>
+                <el-input v-model="queryForm.resume.user.username" placeholder="username"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-input v-model="queryForm.resume.basicInfo.job_profile" placeholder="job_profile"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-input v-model="queryForm.resume.educationInfo.school" placeholder="school"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-input v-model="queryForm.resume.educationInfo.learning_record"
+                          placeholder="learning_record"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button @click="query">Query</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="dialogFormVisible1 = true">New</el-button>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="info" @click="resetQuery">Reset</el-button>
+            </el-form-item>
+        </el-form>
+
+
+        <!--表单-->
+        <div>
+            <el-table :data="tableData" border style="width: 100%;text-align: center">
+                <el-table-column prop="user.username" fixed="left" label="Username" width="120"></el-table-column>
+                <el-table-column prop="basicInfo.name" label="Name" width="120"></el-table-column>
+                <el-table-column prop="basicInfo.job_profile" label="Job_Profile" width="220"></el-table-column>
+                <el-table-column prop="basicInfo.phone" label="Phone" width="120"></el-table-column>
+                <el-table-column prop="basicInfo.email" label="Email" width="120"></el-table-column>
+                <el-table-column prop="educationInfo.school" label="School" width="140"></el-table-column>
+                <el-table-column prop="basicInfo.img" label="Img" width="220"></el-table-column>
+                <el-table-column prop="educationInfo.learning_record" label="learning_record"
+                                 width="120"></el-table-column>
+                <el-table-column fixed="right" label="操作" width="220">
+                    <template slot-scope="scope">
+                        <el-button type="primary" @click="handleOpenEdit(scope.row)" size="small">编辑</el-button>
+                        <el-button type="danger" @click="handleDelete(scope.row)" size="small">删除</el-button>
+                    </template>
+                </el-table-column>
+            </el-table>
+        </div>
+        <hr>
+
+        <!--分页-->
+        <div class="block" style="margin:3rem auto auto 35rem">
+            <el-pagination
+                    @current-change="currentChange"
+                    :current-page="page.currentPage"
+                    :page-size="page.pageSize"
+                    layout="total, prev, pager, next, jumper"
+                    :total="page.total">
+            </el-pagination>
+        </div>
+
+        <!--新建信息表单-->
+        <el-dialog title="新建信息" :visible.sync="dialogFormVisible1">
+            <el-form :model="operationForm" class="update_form" label-position="right" label-width="80px">
+                <el-col span="12">
+                    <el-form-item label="username">
+                        <el-input v-model="operationForm.user.username" placeholder="username"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="name">
+                        <el-input v-model="operationForm.basicInfo.name" placeholder="name"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="job_profile">
+                        <el-input v-model="operationForm.basicInfo.job_profile" placeholder="job_profile"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="phone">
+                        <el-input v-model="operationForm.basicInfo.phone" placeholder="phone"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="email">
+                        <el-input v-model="operationForm.basicInfo.email" placeholder="email"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="img">
+                        <el-input v-model="operationForm.basicInfo.img" placeholder="address"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="school">
+                        <el-input v-model="operationForm.educationInfo.school" placeholder="school"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="record">
+                        <el-input v-model="operationForm.educationInfo.learning_record" placeholder="learning_record"></el-input>
+                    </el-form-item>
+                </el-col>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible1 = false">取 消</el-button>
+                <el-button type="primary" @click="insert">确 定</el-button>
+            </div>
+        </el-dialog>
+
+        <!--修改信息表单-->
+        <el-dialog title="修改信息" :visible.sync="dialogFormVisible2">
+            <el-form :model="operationForm" class="update_form" label-position="right" label-width="80px">
+                <el-col span="12">
+                    <el-form-item label="username">
+                        <el-input v-model="operationForm.user.username" disabled placeholder="username"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="name">
+                        <el-input v-model="operationForm.basicInfo.name" placeholder="password"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="job_profile">
+                        <el-input v-model="operationForm.basicInfo.job_profile" placeholder="job_profile"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="phone">
+                        <el-input v-model="operationForm.basicInfo.phone" placeholder="phone"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="email">
+                        <el-input v-model="operationForm.basicInfo.email" placeholder="email"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="img">
+                        <el-input v-model="operationForm.basicInfo.img" placeholder="address"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="school">
+                        <el-input v-model="operationForm.educationInfo.school" placeholder="school"></el-input>
+                    </el-form-item>
+                </el-col>
+                <el-col span="12">
+                    <el-form-item label="record">
+                        <el-input v-model="operationForm.educationInfo.learning_record" placeholder="learning_record"></el-input>
+                    </el-form-item>
+                </el-col>
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible2 = false">取 消</el-button>
+                <el-button type="primary" @click="update">确 定</el-button>
+            </div>
+        </el-dialog>
+    </div>
+</body>
+<script src="/lib/js/vue.js"></script>
+<script src="/lib/js/elementUI_index.js"></script>
+<script src="/lib/js/axios.min.js"></script>
+<script>
+    let resume = new Vue({
+        el: "#resumeInfo",
+        data: {
+            //查询到的结果
+            tableData: [],
+            //查询表单
+            queryForm: {
+                resume: {
+                    user: {},
+                    basicInfo: {},
+                    educationInfo: {},
+                    personalAbility: [],
+                    projectExperience: [],
+                    winnerHonor: [],
+                    personalProfile: [],
+                }
+            },
+            //分页
+            page: {
+                currentPage: 1,
+                pageSize: 3,
+            },
+            //查询状态
+            status: 0,
+            //操作表单
+            operationForm: {
+                user: {},
+                basicInfo: {},
+                educationInfo: {},
+            },
+            //新建表单的弹窗
+            dialogFormVisible1: false,
+            //修改表单的弹窗
+            dialogFormVisible2: false,
+        },
+        created() {
+            this.findAll();
+        },
+        methods: {
+            //查询所有
+            findAll: function () {
+                axios.get("/resume", {params: this.page}).then((res) => {
+                    this.tableData = res.data.data.list;
+                    this.page.total = res.data.data.total;
+                    this.status = 0;
+                });
+            },
+            //分页
+            currentChange: function (info) {
+                this.page.currentPage = info;
+                if (this.status === 0)
+                    this.findAll();
+                else
+                    this.query();
+            },
+
+            //按条件查询
+            query: function () {
+                this.queryForm.currentPage = this.page.currentPage;
+                this.queryForm.pageSize = this.page.pageSize;
+                axios.post("/resume/select", this.queryForm).then((res) => {
+                    if (res.data.flag)
+                        this.$message.success(res.data.msg);
+                    else
+                        this.$message.error(res.data.msg);
+                    this.tableData = res.data.data.list;
+                    this.page.total = res.data.data.total;
+                    this.status = 1;
+                });
+            },
+            //提交新建数据
+            insert: function () {
+                axios.post("/resume", this.operationForm).then((res) => {
+                    if (res.data.flag) {
+                        this.$message.success(res.data.msg);
+                        this.dialogFormVisible1 = false;
+                        this.operationForm = {
+                            user: {},
+                            basicInfo: {},
+                            educationInfo: {},
+                        };
+                        //查询所有
+                        this.queryForm.resume = {
+                            user: {},
+                            basicInfo: {},
+                            educationInfo: {},
+                            personalAbility: [],
+                            projectExperience: [],
+                            winnerHonor: [],
+                            personalProfile: [],
+                        };
+                        this.findAll();
+                    } else
+                        this.$message.error(res.data.msg);
+                });
+            },
+            //打开修改表单弹窗
+            handleOpenEdit: function (info) {
+                this.dialogFormVisible2 = true;
+                this.operationForm = info;
+            },
+            //提交修改
+            update: function () {
+                axios.put("/resume", this.operationForm).then((res) => {
+                    if (res.data.flag) {
+                        this.$message.success(res.data.msg);
+                        this.dialogFormVisible2 = false;
+                        this.operationForm = {
+                            user: {},
+                            basicInfo: {},
+                            educationInfo: {},
+                        };
+                        //使删除操作不影响条件查询
+                        if (this.status === 0)
+                            this.findAll();
+                        else
+                            this.findByConditions();
+                    } else
+                        this.$message.error(res.data.msg);
+                });
+            },
+            //重置表单
+            resetQuery: function () {
+                this.page.currentPage = 1;
+                //使查询表单中的查询条件为空
+                this.queryForm.resume = {
+                    user: {},
+                    basicInfo: {},
+                    educationInfo: {},
+                    personalAbility: [],
+                    projectExperience: [],
+                    winnerHonor: [],
+                    personalProfile: [],
+                };
+                this.findAll();
+            },
+            //删除数据
+            handleDelete: function (info) {
+                this.$confirm("此操作将永久删除当前信息，是否继续？", "提示", {type: "info"}).then(() => {
+                    axios.delete("/resume", {data: info}).then((res) => {
+                        console.log(info);
+                        if (res.data.flag) {
+                            this.$message.success(res.data.msg);
+                            //使删除操作不影响条件查询
+                            if (this.status === 0)
+                                this.findAll();
+                            else
+                                this.findByConditions();
+                        } else {
+                            this.$message.error(res.data.msg);
+                        }
+                    });
+                });
+            },
+        }
+    })
+</script>
+</html>

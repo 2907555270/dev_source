@@ -153,7 +153,7 @@
             },
             // 年龄计算
             compute_age: function () {
-                app.ruleForm.age = new Date(new Date() - app.ruleForm.birthday).getFullYear() - 1970;
+                this.ruleForm.age = new Date(new Date() - this.ruleForm.birthday).getFullYear() - 1970;
             },
         },
     })

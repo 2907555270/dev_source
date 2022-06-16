@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/lib/css/elementUI_index.css">
 </head>
@@ -189,9 +189,10 @@
                 this.queryForm.currentPage = this.page.currentPage;
                 this.queryForm.pageSize = this.page.pageSize;
                 axios.post("/travel/select", this.queryForm).then((res) => {
-                    if (!res.data.flag) {
+                    if(res.data.flag)
+                        this.$message.success(res.data.msg);
+                    else
                         this.$message.error(res.data.msg);
-                    }
                     this.tableData = res.data.data.list;
                     this.page.total = res.data.data.total;
                     this.status = 1;
@@ -201,6 +202,7 @@
             //分页跳转
             currentChange: function (info) {
                 this.page.currentPage = info;
+                // 点击页面跳转，保持当前查询条件不变---> 在当前的查询范围内切换页面
                 if (this.status === 0)
                     this.findAll();
                 else
@@ -218,13 +220,14 @@
             handOpenInsert: function () {
                 this.dialogFormVisible2 = true;
             },
+            // 插入数据
             insert: function () {
                 axios.put("/travel", this.operationForm).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
-                        this.findAll();
                         this.dialogFormVisible2 = false;
                         this.operationForm = {};
+                        this.findAll();
                     } else {
                         this.$message.error(res.data.msg);
                     }
@@ -265,7 +268,10 @@
                     axios.delete("/travel", {data: info}).then((res) => {
                         if (res.data.flag) {
                             this.$message.success(res.data.msg);
-                            this.findAll();
+                            if (this.status === 0)
+                                this.findAll();
+                            else
+                                this.findByConditions();
                         } else {
                             this.$message.error(res.data.msg);
                         }

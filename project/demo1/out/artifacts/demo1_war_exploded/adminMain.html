@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
     <link rel="stylesheet" href="/lib/css/elementUI_index.css">
 </head>
@@ -17,7 +17,7 @@
                 </el-form-item>
                 <el-form-item label="Password">
                     <el-input type="password" v-model="loginForm.password" autocomplete="off"
-                              placeholder="Please input your password" show-password="true"></el-input>
+                              placeholder="Please input your password" :show-password=true></el-input>
                 </el-form-item>
                 <el-form-item>
                     <el-button @click="submitFormLogin">Log in</el-button>
@@ -35,7 +35,7 @@
                     </el-form-item>
                     <el-form-item label="New Password">
                         <el-input type="password" v-model="loginForm.password"
-                                  placeholder="Please input your new password" show-password="true"></el-input>
+                                  placeholder="Please input your new password" :show-password=true></el-input>
                     </el-form-item>
                     <el-form-item style="margin:2rem auto">
                         <el-button type="warning" @click="update">Update Password</el-button>
@@ -106,4 +106,4 @@
         },
     });
 </script>
-</html>
+</Dhtml>

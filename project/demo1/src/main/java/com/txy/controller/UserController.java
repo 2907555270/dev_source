@@ -7,6 +7,8 @@ import com.txy.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+
 @RestController
 @RequestMapping("/user")
 public class UserController {
@@ -31,11 +33,22 @@ public class UserController {
      * @return
      */
     @GetMapping("/login")
-    public Result login(String username,String password){
+    public Result login(String username,String password,HttpServletRequest request){
         User login = userService.login(username,password);
         if(login==null)
             return new Result(false,"用户名或密码错误 -_-");
+        else{
+            //登录成功，保存登录信息
+            request.getSession().setAttribute("user",login);
+        }
         return new Result(true,"登录成功 ^_^",login);
+    }
+
+    @GetMapping
+    public Result getUserInfo(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute("user");
+        boolean flag = user!=null;
+        return new Result(flag,flag?"用户信息获取成功":"请先登录",user);
     }
 
     /**
