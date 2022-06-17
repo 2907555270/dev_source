@@ -1,0 +1,23 @@
+body {
+    background-color: #c8cacb;
+}
+
+.main-box {
+    height: 41rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+/*轮播图trigger禁用*/
+.main-box ul.el-carousel__indicators.el-carousel__indicators--horizontal {
+    display: none;
+}
+
+/*轮播图高度*/
+.el-carousel__container{
+    height: 33rem;
+}
+
+.el-carousel__item{
+    overflow-y: scroll;
+}

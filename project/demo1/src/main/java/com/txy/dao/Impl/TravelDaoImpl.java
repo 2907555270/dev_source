@@ -1,7 +1,7 @@
 package com.txy.dao.Impl;
 
 import com.github.pagehelper.PageInfo;
-import com.txy.config.TravelPage;
+
 import com.txy.dao.TravelDao;
 import com.txy.domain.Travel;
 import org.springframework.beans.factory.annotation.Autowired;

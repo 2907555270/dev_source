@@ -1,5 +1,8 @@
-dao/TravelDaoTest.class
 service/UserServiceTest.class
 service/TravelServiceTest.class
+service/ResumeServiceTest.class
+dao/TravelDaoTest.class
+dao/AdminDaoTest.class
 dao/UserDaoTest.class
 service/AdminServiceTest.class
+dao/ResumeDaoTest.class

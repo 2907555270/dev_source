@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("resume")
+//@CrossOrigin(origins = "*",maxAge = 3600)
 public class ResumeController {
 
     @Autowired
@@ -23,7 +24,7 @@ public class ResumeController {
      * @param pageSize
      * @return
      */
-    @GetMapping
+    @GetMapping("findAll")
     public Result findAll(int currentPage,int pageSize){
         return new Result(true,resumeService.findAll(currentPage,pageSize));
     }
@@ -46,7 +47,7 @@ public class ResumeController {
      * @param resume
      * @return
      */
-    @PostMapping()
+    @PostMapping("save")
     public Result save(@RequestBody Resume resume){
         boolean flag = resumeService.save(resume);
         return new Result(flag,flag?"保存成功 ^_^":"保存失败 -_-");
@@ -85,7 +86,7 @@ public class ResumeController {
      * @param resume
      * @return
      */
-    @PutMapping
+    @PutMapping("update")
     public Result update(@RequestBody Resume resume){
         boolean flag = resumeService.update(resume);
         return new Result(flag,flag?"修改成功 ^_^":"修改失败 -_-");
@@ -96,10 +97,9 @@ public class ResumeController {
      * @param resume
      * @return
      */
-    @DeleteMapping
-    @ResponseBody
+    @DeleteMapping("delete")
     public Result delete(@RequestBody Resume resume){
         boolean flag = resumeService.delete(resume);
-        return new Result(flag,flag?"修改成功 ^_^":"修改失败 -_-");
+        return new Result(flag,flag?"删除成功 ^_^":"删除失败 -_-");
     }
 }

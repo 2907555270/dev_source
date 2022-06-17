@@ -84,7 +84,10 @@
         el: "#app",
         data: {
             //登录表单
-            loginForm: {},
+            loginForm: {
+                username:"",
+                password:"",
+            },
             //修改密码表单
             updateForm: {},
             // UI组件
@@ -98,7 +101,7 @@
                 axios.get("/user/login",{params:this.loginForm}).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
-                        location.href = "/index.html";
+                        setTimeout((location.href = "/index.html"),2000);
                     } else {
                         this.$message.error(res.data.msg);
                         this.loginForm.password = "";

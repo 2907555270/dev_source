@@ -1,6 +1,6 @@
 package com.txy.interceptor;
 
-import com.txy.config.Result;
+import com.txy.domain.Admin;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -10,9 +10,12 @@ import javax.servlet.http.HttpServletResponse;
 public class AdminInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        System.out.println("AdminInterceptor preHandle");
-        //是否登录
-        return request.getSession().getAttribute("login")!=null;
+        Object admin = request.getSession().getAttribute("user");
+        boolean flag = admin==null;
+        if(flag){
+            System.out.println("管理员未登录，不予访问");
+        }
+        return !flag;
     }
 
     @Override

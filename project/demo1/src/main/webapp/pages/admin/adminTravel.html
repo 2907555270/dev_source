@@ -222,7 +222,7 @@
             },
             // 插入数据
             insert: function () {
-                axios.put("/travel", this.operationForm).then((res) => {
+                axios.put("/travel/save", this.operationForm).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
                         this.dialogFormVisible2 = false;
@@ -240,7 +240,7 @@
                 this.operationForm = info;
             },
             update: function () {
-                axios.post("/travel", this.operationForm).then((res) => {
+                axios.post("/travel/update", this.operationForm).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
                         this.dialogFormVisible1 = false;
@@ -265,7 +265,7 @@
             //删除数据
             handleDelete: function (info) {
                 this.$confirm("此操作将永久删除当前信息，是否继续？", "提示", {type: "info"}).then(() => {
-                    axios.delete("/travel", {data: info}).then((res) => {
+                    axios.delete("/travel/delete", {data: info}).then((res) => {
                         if (res.data.flag) {
                             this.$message.success(res.data.msg);
                             if (this.status === 0)

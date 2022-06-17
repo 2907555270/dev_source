@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/travel")
+//@CrossOrigin(origins = "*",maxAge = 3600)
 public class TravelController {
     @Autowired
     private TravelService travelService;
@@ -28,20 +29,20 @@ public class TravelController {
         return new Result(flag,flag?"查询成功 ^_^":"查询结果为空 -_-",pageInfo);
     }
 
-    @PutMapping()
+    @PutMapping("save")
     public Result save(@RequestBody Travel travel){
         boolean flag = travelService.save(travel);
         return new Result(flag,flag?"添加成功^_^":"添加失败-_-");
     }
 
-    @PostMapping()
+    @PostMapping("update")
     public Result update(@RequestBody Travel travel){
         boolean flag = travelService.update(travel);
         System.out.println(travel.toString());
         return new Result(flag,flag?"修改成功^_^":"修改失败-_-");
     }
 
-    @DeleteMapping
+    @DeleteMapping("delete")
     public Result delete(@RequestBody Travel travel){
         boolean flag = travelService.delete(travel.get_id());
         return new Result(flag,flag?"删除成功^_^":"删除失败-_-");

@@ -44,11 +44,17 @@ public class UserController {
         return new Result(true,"登录成功 ^_^",login);
     }
 
-    @GetMapping
+    @GetMapping("userInfo")
     public Result getUserInfo(HttpServletRequest request){
         User user = (User) request.getSession().getAttribute("user");
         boolean flag = user!=null;
         return new Result(flag,flag?"用户信息获取成功":"请先登录",user);
+    }
+
+    @GetMapping("logOut")
+    public Result logOut(HttpServletRequest request){
+        request.getSession().removeAttribute("user");
+        return new Result(true,"您已退出登录");
     }
 
     /**
@@ -56,7 +62,7 @@ public class UserController {
      * @param userPage
      * @return
      */
-    @PostMapping
+    @PostMapping("select")
     public Result findByConditions(@RequestBody UserPage userPage){
         return new Result(true,userService.findByConditions(userPage.getUser(),userPage.getCurrentPage(), userPage.getPageSize()));
     }
@@ -91,7 +97,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @PutMapping
+    @PutMapping("update")
     public Result update(@RequestBody User user){
         boolean flag = userService.update(user);
         return new Result(flag,flag?"修改成功 ^_^":"修改失败 -_-");
@@ -102,7 +108,7 @@ public class UserController {
      * @param user
      * @return
      */
-    @DeleteMapping
+    @DeleteMapping("delete")
     public Result delete(@RequestBody User user){
         boolean flag = userService.delete(user.getUsername());
         return new Result(flag,flag?"删除成功 ^_^":"删除失败 -_-");

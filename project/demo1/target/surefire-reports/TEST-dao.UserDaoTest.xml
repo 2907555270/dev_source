@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="dao.UserDaoTest" time="0.173" errors="1" skipped="0">
+<testsuite tests="5" failures="0" name="dao.UserDaoTest" time="0.122" errors="1" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -57,8 +57,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="dao.UserDaoTest" name="test_findAll" time="0.001"/>
-  <testcase classname="dao.UserDaoTest" name="test_insert" time="0.094">
+  <testcase classname="dao.UserDaoTest" name="test_findAll" time="0.012"/>
+  <testcase classname="dao.UserDaoTest" name="test_insert" time="0.085">
     <error message="
 ### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &apos;test&apos; for key &apos;tb_user.tb_user_username_uindex&apos;
 ### The error may exist in com/txy/mapper/UserMapper.xml
@@ -78,13 +78,13 @@
 	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
 	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.insert(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.insert(Unknown Source)
 	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
 	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
 	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:145)
 	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:86)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.insert(Unknown Source)
-	at dao.UserDaoTest.test_insert(UserDaoTest.java:27)
+	at jdk.proxy2/jdk.proxy2.$Proxy29.insert(Unknown Source)
+	at dao.UserDaoTest.test_insert(UserDaoTest.java:46)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -130,6 +130,12 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &a
 	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
 	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:354)
 	at com.mchange.v2.c3p0.impl.NewProxyPreparedStatement.execute(NewProxyPreparedStatement.java:67)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59)
+	at jdk.proxy3/jdk.proxy3.$Proxy36.execute(Unknown Source)
 	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
 	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
 	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
@@ -140,7 +146,7 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &a
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.update(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy34.update(Unknown Source)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:194)
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:181)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -150,8 +156,15 @@ Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry &a
 	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
 	... 46 more
 </error>
+    <system-out>Creating a new SqlSession
+SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a8816cc] was not registered for synchronization because synchronization is not active
+JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@37baddde [wrapping: com.mysql.cj.jdbc.ConnectionImpl@2bc378f7]] will not be managed by Spring
+==&gt;  Preparing: insert into demo1.tb_user values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+==&gt; Parameters: null, test(String), test(String), test(String), 10(Integer), test(String), 123(String), 2907@qq.com(String), /home/pic.img(String)
+Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a8816cc]
+</system-out>
   </testcase>
-  <testcase classname="dao.UserDaoTest" name="test_update" time="0.01"/>
-  <testcase classname="dao.UserDaoTest" name="test_updatePassword" time="0.015"/>
-  <testcase classname="dao.UserDaoTest" name="test_findByConditions" time="0.053"/>
+  <testcase classname="dao.UserDaoTest" name="test_update" time="0.005"/>
+  <testcase classname="dao.UserDaoTest" name="test_updatePassword" time="0.008"/>
+  <testcase classname="dao.UserDaoTest" name="test_findByConditions" time="0.012"/>
 </testsuite>

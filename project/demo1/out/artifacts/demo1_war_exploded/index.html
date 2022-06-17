@@ -26,8 +26,8 @@
                     <el-menu-item index="4" class="menu-item-content"><a href="">Message</a></el-menu-item>
                     <el-menu-item index="3" class="menu-item-content"><a href="">Favorite</a></el-menu-item>
                     <el-menu-item index="4" class="menu-item-content"><a href="">Personal</a></el-menu-item>
-                    <el-menu-item v-if="isLogin" index="4" class="menu-item-content"><a href="/login.html">Login</a></el-menu-item>
-                    <el-menu-item v-else index="4" class="menu-item-content"><a href="">Logout</a></el-menu-item>
+                    <el-menu-item v-if="!isLogin" index="4" class="menu-item-content"><a href="login.html">Login</a></el-menu-item>
+                    <el-menu-item v-else index="4" class="menu-item-content"><a @click="logOut">Logout</a></el-menu-item>
                 </el-menu>
             </el-header>
 
@@ -211,7 +211,7 @@
                 {
                     title:"Make A Resume",
                     description:"Fill in the information and create your resume with one click",
-                    url:"/ResumeInfo.html",
+                    url:"/pages/user/resumeInfo.html",
                     img:"https://cdn.dribbble.com/users/696837/screenshots/11469714/media/4ff179d0325e7306b04cf393c2b2c7a0.png?compress=1&resize=450x338&vertical=top",
                     color: '#67c23a',
                 },
@@ -233,9 +233,13 @@
                     img:"https://fuss10.elemecdn.com/9/bb/e27858e973f5d7d3904835f46abbdjpeg.jpeg",
                     color: '#909399',
                 }
-            ]
+            ],
+
+            //是否登录
+            isLogin :false,
         },
         created(){
+            this.getUserInfo();
             this.getTravel();
         },
         methods:{
@@ -293,6 +297,14 @@
                 });
             },
 
+            //退出登录
+            logOut:function(){
+                axios.get("user/logOut").then((res)=>{
+                    this.$message.success(res.data.msg);
+                    setTimeout((location.href="login.html"),2000);
+                });
+            },
+
             //点击分类标签:执行一次查询，和搜索框内容结合
             handleClick:function(){
                 this.findByConditions();
@@ -302,14 +314,20 @@
             currentChange:function(page){
                 this.queryForm.currentPage = page;
                 this.getTravel();
+            },
+
+            //登录或则登出
+            getUserInfo:function (){
+                axios.get("user/userInfo").then((res)=>{
+                    if(res.data.flag)
+                        this.$message.success(res.data.msg);
+                    else
+                        this.$message.error(res.data.msg);
+                    this.isLogin = res.data.flag;
+                    this.user = res.data.data;
+                });
             }
 
-        },
-        computed: {
-            //登录或则登出
-            isLogin:function (){
-                return this.user!==null;
-            }
         },
     })
 </script>

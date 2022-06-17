@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class ResumePage {
     private Resume resume;
-    private int currentPage;
-    private int pageSize;
+    private int currentPage=1;
+    private int pageSize=1;
 }
