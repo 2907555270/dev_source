@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+	<title>看板</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/scanboard.css" />
+	<link rel="stylesheet" type="text/css" href="css/animsition.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<!-- 导入echarts -->
+	<script src="js/echarts.min.js"></script>
+
+</head>
+
+<body>
+	<div class="scanboardWp animsition">
+		<div id="top">
+			<div class="wp clearfix">
+				<div class="left pageTit">
+					<a class="summaryBtn" href="javascript:void(0);">垃圾运输车数据监控</a>
+				</div>
+				<div class="center topLogo">
+					<h1>智能垃圾运输管理可视化平台</h1>
+				</div>
+				<div class="right topBar">
+					<div class="topTime">时间加载中...</div>
+					<div class="clearfix">
+						<a href="index.html" class="signOut fr">退出</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Top End!-->
+
+		<!--Main Start!-->
+		<div id="main" class="wp clearfix">
+			<div class="left">
+				<!--今日运单数量-->
+				<div class="item waybill">
+					<div class="itemTit">
+						<span class="border-yellow">站点垃圾余量</span>
+					</div>
+					<div id="rest_garbage" style="height: 38vh;">
+
+					</div>
+				</div>
+
+				<!--各阶段平均用时统计-->
+				<div class="item waybill">
+					<div class="itemTit">
+						<span class="border-green">车辆使用率</span>
+					</div>
+					<div id="test" style="height: 35vh;">
+					</div>
+				</div>
+			</div>
+
+			<div class="center">
+				<div class="centerWp">
+					<!--中间大地图-->
+					<div class="mapContainer">
+						<div id="myMap" class="item" style="height: 48vh;"></div>
+					</div>
+
+					<!--月垃圾运输量-->
+					<div class="billChart">
+						<div class="itemTit">
+							<span class="border-blue">垃圾分类统计</span>
+						</div>
+						<div id="statistic_chart" style="height: 35vh;">
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+				<!--总计运单数-->
+				<div class="item total itembg">
+					<div class="itemTit">
+						<span class="border-yellow">今日垃圾分类统计</span>
+					</div>
+					<div class="day_chart" id="day_chart">
+
+					</div>
+				</div>	
+
+				<!--基本信息-->
+				<div class="item basicInfo">
+					<div class="itemTit">
+						<span class="border-green">车辆信息</span>
+					</div>
+					<div class="itemCon itembg">
+						<div class="infoPie">
+							<ul class="clearfix">
+								<li class="color-yellow">
+									<span class="border-yellow" id="indicator1" total="7">0</span>
+									<p>运输车辆</p>
+								</li>
+								<li class="color-green">
+									<span class="border-green" id="indicator2" total="2">0</span>
+									<p>空闲车辆</p>
+								</li>
+								<li class="color-blue">
+									<span class="border-blue" id="indicator3" total="12">0</span>
+									<p>今日运输</p>
+								</li>
+							</ul>
+							<div id="indicatorContainer"></div>
+						</div>
+					</div>
+				</div>
+
+				<!--运单状态-->
+				<div class="item billState">
+					<div class="itemTit">
+						<span class="border-green">车辆调度信息</span>
+					</div>
+					<div class="itemCon">
+						<div class="StateBox">
+							<div class="StateTit">
+								<span>订单编号</span>
+								<span>使用时间</span>
+								<span>满载率</span>
+							</div>
+							<div id="FontScroll">
+								<ul>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="78%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="80%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="49%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="7%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="55%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="100%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="94%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="23%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="67%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="42%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="38%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+									<li>
+										<div class="fontInner clearfix">
+											<span>ZC1712120023</span>
+											<span>2小时15分</span>
+											<span>
+												<div class="progress" progress="76%">
+													<div class="progressBar">
+														<span></span>
+													</div>
+													<h3><i>
+															<h4></h4>
+														</i></h3>
+												</div>
+											</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script/scanboard.js"></script>
+<script type="text/javascript" src="script/charts.js"></script>
+<script type="text/javascript" src="js/fontscroll.js"></script>
+<script type="text/javascript" src="js/jquery.animsition.js"></script>
+
+<script type="text/javascript">
+	window._AMapSecurityConfig = {
+		securityJsCode: '424009fdc68f3ea378a89ac5003526b8',
+	}
+</script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.4.15&key=a7dff3e6d56052260bb80ad7a9cdc1ad"></script>
+<script src="https://webapi.amap.com/maps?v=1.4.15&key=a7dff3e6d56052260bb80ad7a9cdc1ad&plugin=AMap.Driving"></script>
+<script type="text/javascript" src="script/map.js"></script>
+
+</html>
