@@ -2,7 +2,6 @@ package com.txy.controller;
 
 import com.txy.config.Result;
 import com.txy.domain.Admin;
-import com.txy.domain.User;
 import com.txy.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -11,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @RestController
 @RequestMapping("admin")
+@CrossOrigin("*")
 public class AdminController {
 
     @Autowired

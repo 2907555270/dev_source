@@ -29,13 +29,13 @@ public class TravelController {
         return new Result(flag,flag?"查询成功 ^_^":"查询结果为空 -_-",pageInfo);
     }
 
-    @PutMapping("save")
+    @PostMapping("save")
     public Result save(@RequestBody Travel travel){
         boolean flag = travelService.save(travel);
         return new Result(flag,flag?"添加成功^_^":"添加失败-_-");
     }
 
-    @PostMapping("update")
+    @PutMapping("update")
     public Result update(@RequestBody Travel travel){
         boolean flag = travelService.update(travel);
         System.out.println(travel.toString());

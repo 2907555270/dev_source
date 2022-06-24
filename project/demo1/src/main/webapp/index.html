@@ -322,7 +322,7 @@
                     if(res.data.flag)
                         this.$message.success(res.data.msg);
                     else
-                        this.$message.error(res.data.msg);
+                        this.$message.error("没有获取到用户信息，请先登录 -_-");
                     this.isLogin = res.data.flag;
                     this.user = res.data.data;
                 });

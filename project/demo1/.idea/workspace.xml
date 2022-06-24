@@ -9,7 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9dea2e3-d577-4839-b531-83d8f1319989" name="Changes" comment="" />
+    <list default="true" id="f9dea2e3-d577-4839-b531-83d8f1319989" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../简历管理系统.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/ResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/ResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/WEB-INF/classes/com/txy/controller/TravelController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/pages/admin/adminTravel.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/demo1_war_exploded/pages/admin/adminTravel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/ResumeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/ResumeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/txy/controller/TravelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/admin/adminTravel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/ResumeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/controller/ResumeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/txy/controller/TravelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/txy/controller/TravelController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -333,6 +348,12 @@
       <workItem from="1655430787012" duration="1236000" />
       <workItem from="1655436872873" duration="236000" />
       <workItem from="1655439923001" duration="627000" />
+      <workItem from="1655653733571" duration="1976000" />
+      <workItem from="1655711435517" duration="19000" />
+      <workItem from="1655719561132" duration="55000" />
+      <workItem from="1655719645415" duration="310000" />
+      <workItem from="1655947497799" duration="6193000" />
+      <workItem from="1655980463698" duration="248000" />
     </task>
     <servers />
   </component>

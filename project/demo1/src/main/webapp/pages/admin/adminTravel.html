@@ -222,7 +222,7 @@
             },
             // 插入数据
             insert: function () {
-                axios.put("/travel/save", this.operationForm).then((res) => {
+                axios.post("/travel/save", this.operationForm).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
                         this.dialogFormVisible2 = false;
@@ -240,7 +240,7 @@
                 this.operationForm = info;
             },
             update: function () {
-                axios.post("/travel/update", this.operationForm).then((res) => {
+                axios.put("/travel/update", this.operationForm).then((res) => {
                     if (res.data.flag) {
                         this.$message.success(res.data.msg);
                         this.dialogFormVisible1 = false;
